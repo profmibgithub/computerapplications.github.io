@@ -284,11 +284,68 @@ const mainContent = document.getElementById('mainContent');
 const backToTop = document.getElementById('backToTop');
 
 // Initialize application
-document.addEventListener('DOMContentLoaded', function() {
-  initializeNavigation();
-  initializeEventListeners();
-  initializeBackToTop();
-  showPage('home');
+document.addEventListener('DOMContentLoaded', function () {
+    // Navigation toggle for mobile
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+    });
+    navToggle.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        navMenu.classList.toggle('active');
+    });
+
+    // Dropdown menu for semesters
+    const navDropdown = document.querySelector('.nav-dropdown > .nav-link');
+    const dropdownMenu = document.querySelector('.nav-dropdown .dropdown-menu');
+    navDropdown.addEventListener('click', function (e) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle('show');
+    });
+    navDropdown.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle('show');
+    });
+
+    // Page navigation
+    document.querySelectorAll('[data-page]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.preventDefault();
+            showPage(el.dataset.page, el.dataset.semester);
+        });
+        el.addEventListener('touchstart', function (e) {
+            e.preventDefault();
+            showPage(el.dataset.page, el.dataset.semester);
+        });
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    backToTop.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Show correct page
+    function showPage(page, semester) {
+        document.querySelectorAll('.page').forEach(function (section) {
+            section.classList.remove('active');
+        });
+        if (page === 'semester' && semester) {
+            document.getElementById('semesterPage').classList.add('active');
+            // Load semester content dynamically here
+        } else if (page === 'program') {
+            document.getElementById('programPage').classList.add('active');
+        } else if (page === 'industry') {
+            document.getElementById('industryPage').classList.add('active');
+        } else {
+            document.getElementById('homePage').classList.add('active');
+        }
+    }
 });
 
 // Navigation Functions
