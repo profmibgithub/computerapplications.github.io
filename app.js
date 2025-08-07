@@ -1,6 +1,6 @@
 // Computer Applications Website JavaScript
 
-// Application data
+// Application data with full syllabus
 const programData = {
   program_info: {
     name: "Bachelor with Computer Applications as Major",
@@ -20,10 +20,56 @@ const programData = {
           practical_credits: 2,
           description: "Introduction to computers, data representation, software/hardware concepts, networking basics",
           units: [
-            "Introduction to Computers, History, Generation of Computers, Data Processing, Memory Hierarchy",
-            "Application Software and System Software, Programming Languages",
-            "Data Communication, Networking Basics",
-            "Internet and WWW, Web Browsers, Email"
+            {
+              title: "Introduction to Computers and Data Processing",
+              topics: [
+                "History and Evolution of Computers",
+                "Generation of Computers - Vacuum tubes, Transistors, Integrated Circuits, Microprocessors, AI",
+                "Classification of Computers - Analog, Digital, Hybrid",
+                "Computer Organization - Input, Processing, Output, Storage",
+                "Data vs Information - Data Processing Cycle",
+                "Memory Hierarchy - Primary Memory (RAM, ROM), Secondary Memory (HDD, SSD)",
+                "Cache Memory and Virtual Memory concepts"
+              ]
+            },
+            {
+              title: "Software Systems and Programming Languages",
+              topics: [
+                "System Software - Operating Systems, Device Drivers, Utilities",
+                "Application Software - Word Processors, Spreadsheets, Database Software",
+                "Programming Software - Compilers, Interpreters, Debuggers",
+                "Programming Languages Classification - Low Level, High Level, Machine Language",
+                "Programming Paradigms - Procedural, Object-Oriented, Functional",
+                "Software Development Life Cycle (SDLC)",
+                "Open Source vs Proprietary Software"
+              ]
+            },
+            {
+              title: "Data Communication and Networking",
+              topics: [
+                "Data Communication Components - Sender, Receiver, Medium, Protocol",
+                "Transmission Media - Guided (Twisted Pair, Coaxial, Fiber Optic), Unguided (Radio, Microwave, Satellite)",
+                "Network Topologies - Bus, Star, Ring, Mesh, Tree, Hybrid",
+                "Network Types - LAN, WAN, MAN, PAN",
+                "Network Protocols - TCP/IP, HTTP, FTP, SMTP",
+                "OSI Model and its 7 layers",
+                "Network Security basics - Firewalls, Encryption"
+              ]
+            },
+            {
+              title: "Internet and World Wide Web",
+              topics: [
+                "Internet History and Architecture",
+                "Internet Service Providers (ISPs) and Internet Backbone",
+                "Domain Name System (DNS) and IP Addressing",
+                "Web Browsers - Chrome, Firefox, Safari, Edge functionality",
+                "Search Engines - Google, Bing, Yahoo search algorithms",
+                "Email Systems - SMTP, POP3, IMAP protocols",
+                "Web Technologies - HTML, CSS, JavaScript basics",
+                "E-commerce and Online Services",
+                "Internet Security and Privacy concerns"
+              ]
+            }
           ]
         },
         {
@@ -34,10 +80,58 @@ const programData = {
           practical_credits: 2,
           description: "Number systems, Boolean algebra, logic gates, combinational circuits",
           units: [
-            "Digital quantities, Number Systems, Binary Arithmetic",
-            "Logic Gates, Boolean Algebra",
-            "Combinational Logic Circuits",
-            "von Neumann Architecture, Microprocessors"
+            {
+              title: "Number Systems and Binary Arithmetic",
+              topics: [
+                "Decimal, Binary, Octal, and Hexadecimal number systems",
+                "Base conversion methods between different number systems",
+                "Binary Addition, Subtraction using 1's and 2's complement",
+                "Binary Multiplication and Division techniques",
+                "Signed and Unsigned binary representation",
+                "BCD (Binary Coded Decimal) representation",
+                "Gray Code and its applications",
+                "Error detection codes - Parity bits, Hamming codes"
+              ]
+            },
+            {
+              title: "Boolean Algebra and Logic Gates",
+              topics: [
+                "Boolean algebra fundamentals and postulates",
+                "De Morgan's theorems and their applications",
+                "Boolean expression simplification using algebraic methods",
+                "Karnaugh Map (K-Map) simplification for 2, 3, and 4 variables",
+                "Basic Logic Gates - AND, OR, NOT, NAND, NOR, XOR, XNOR",
+                "Gate-level circuit design and implementation",
+                "Universal gates and their significance",
+                "Logic gate specifications - Propagation delay, Fan-in, Fan-out"
+              ]
+            },
+            {
+              title: "Combinational Logic Circuits",
+              topics: [
+                "Combinational vs Sequential circuits characteristics",
+                "Half Adder and Full Adder design and implementation",
+                "Binary adder circuits - Ripple Carry Adder, Look-ahead Carry Adder",
+                "Subtractor circuits and BCD adders",
+                "Encoders, Decoders, and Code converters",
+                "Multiplexers (MUX) and Demultiplexers (DEMUX)",
+                "Comparators and their applications",
+                "Implementation of Boolean functions using MUX and DEMUX"
+              ]
+            },
+            {
+              title: "Computer Architecture and Microprocessors",
+              topics: [
+                "Von Neumann Architecture components and working",
+                "Harvard Architecture vs Von Neumann Architecture",
+                "CPU organization - ALU, Control Unit, Registers",
+                "Instruction set architecture and instruction formats",
+                "Microprocessor fundamentals - 8085, 8086 architecture",
+                "Memory organization and addressing modes",
+                "Input/Output interfaces and interrupt handling",
+                "Introduction to RISC and CISC processors"
+              ]
+            }
           ]
         }
       ]
@@ -53,10 +147,61 @@ const programData = {
           practical_credits: 2,
           description: "Introduction to programming concepts, C language fundamentals",
           units: [
-            "Programming Languages, Flowcharts, Algorithms",
-            "C Programming Basics, Operators, Control Structures",
-            "Loops, Functions, Pointers",
-            "Arrays, Strings, Structures, Dynamic Memory"
+            {
+              title: "Programming Concepts and Problem Solving",
+              topics: [
+                "Algorithm definition and characteristics",
+                "Flowchart symbols and flowchart construction",
+                "Pseudocode writing techniques",
+                "Problem analysis and solution design",
+                "Programming languages evolution and classification",
+                "Compiler vs Interpreter working mechanisms",
+                "Program development life cycle",
+                "Structured programming principles"
+              ]
+            },
+            {
+              title: "C Programming Basics and Operators",
+              topics: [
+                "History and features of C programming language",
+                "C program structure - Preprocessor, main function, statements",
+                "Character set, keywords, identifiers, and constants",
+                "Data types - int, float, double, char and their modifiers",
+                "Variable declaration, initialization, and scope",
+                "Arithmetic, Relational, Logical, Assignment, and Bitwise operators",
+                "Operator precedence and associativity",
+                "Type conversion and type casting"
+              ]
+            },
+            {
+              title: "Control Structures and Loops",
+              topics: [
+                "Sequential, Selection, and Iterative control structures",
+                "Conditional statements - if, if-else, nested if-else, switch-case",
+                "Loop structures - for, while, do-while loops",
+                "Loop control statements - break, continue, goto",
+                "Nested loops and their applications",
+                "Loop optimization techniques",
+                "Common loop patterns and algorithms",
+                "Debugging control flow issues"
+              ]
+            },
+            {
+              title: "Functions, Arrays, and Advanced Concepts",
+              topics: [
+                "Function definition, declaration, and calling",
+                "Function parameters - call by value, call by reference",
+                "Recursive functions and recursion tree analysis",
+                "Storage classes - auto, static, extern, register",
+                "Arrays - declaration, initialization, and manipulation",
+                "Multi-dimensional arrays and matrix operations",
+                "String handling - string.h library functions",
+                "Pointers - declaration, initialization, arithmetic operations",
+                "Dynamic memory allocation - malloc(), calloc(), free()",
+                "Structures and unions - definition and usage",
+                "File handling operations in C"
+              ]
+            }
           ]
         },
         {
@@ -67,352 +212,59 @@ const programData = {
           practical_credits: 2,
           description: "HTML5, CSS3, JavaScript fundamentals for web development",
           units: [
-            "HTML5 Markup, Forms, Multimedia",
-            "CSS Styling, Responsive Design, Bootstrap",
-            "JavaScript Basics, Functions, Control Structures",
-            "DOM manipulation, Event Handling"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 3,
-      courses: [
-        {
-          code: "CAP322J",
-          type: "CT-1",
-          title: "Data Communications and Computer Networks",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Networking fundamentals, protocols, network models",
-          units: [
-            "Data Communication basics, Transmission Media",
-            "Signal Conversion, Multiplexing",
-            "Network Components, OSI/TCP-IP Models",
-            "Network Addressing, Protocols, Error Detection"
-          ]
-        },
-        {
-          code: "ACP323N",
-          type: "Applied Computing Minor",
-          title: "Cryptography & Network Security",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Security fundamentals, cryptographic techniques, network security",
-          units: [
-            "Classical Ciphers, Symmetric Key Cryptography",
-            "Public Key Cryptography, Hash Functions",
-            "Network Security Principles and Protocols",
-            "Security Threats and Mitigation Strategies"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 4,
-      courses: [
-        {
-          code: "CAP422J1",
-          type: "CT-1",
-          title: "Database Management Systems",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Database concepts, ER modeling, SQL, normalization",
-          units: [
-            "Database Fundamentals, DBMS Architecture",
-            "ER Modeling, Relational Model, Normalization",
-            "SQL, Transactions, Concurrency Control"
-          ]
-        },
-        {
-          code: "CAP422J2",
-          type: "CT-2",
-          title: "Object-Oriented Programming with C++",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "OOP concepts, C++ programming, inheritance, polymorphism",
-          units: [
-            "OOP Introduction, C++ Basics",
-            "Classes, Objects, Constructors",
-            "Inheritance, Operator Overloading",
-            "Virtual Functions, File Handling, STL"
-          ]
-        },
-        {
-          code: "CAP422J3",
-          type: "CT-3",
-          title: "Computing Mathematics",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Mathematical foundations for computing",
-          units: [
-            "Matrices and Determinants",
-            "Functions and Limits",
-            "Differentiation",
-            "Approximation and Errors"
-          ]
-        },
-        {
-          code: "ACP422N",
-          type: "Applied Computing Minor",
-          title: "IoT Fundamentals",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Internet of Things concepts, sensors, Arduino programming",
-          units: [
-            "IoT Introduction, Components, Applications",
-            "IoT Architecture, Communication Models",
-            "Hardware Platforms, Sensors, Security"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 5,
-      courses: [
-        {
-          code: "CAP522J1",
-          type: "CT-1",
-          title: "Operating Systems",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "OS concepts, process management, memory management",
-          units: [
-            "OS Introduction, Process Management",
-            "Concurrency, Deadlock Management",
-            "Memory Management, Virtual Memory"
-          ]
-        },
-        {
-          code: "CAP522J2",
-          type: "CT-2",
-          title: "Data Structures using C",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Linear and non-linear data structures, algorithms",
-          units: [
-            "Arrays, Searching, Sorting Algorithms",
-            "Stacks, Queues, Linked Lists",
-            "Trees, Binary Search Trees",
-            "Graphs, Graph Algorithms"
-          ]
-        },
-        {
-          code: "CAP522J3",
-          type: "CT-3",
-          title: "Discrete Mathematics",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Mathematical structures for computer science",
-          units: [
-            "Sets, Relations, Functions",
-            "Logic, Propositions, Predicates",
-            "Matrices, Counting, Recurrence Relations",
-            "Graphs, Trees, Graph Algorithms"
-          ]
-        },
-        {
-          code: "ACP522N",
-          type: "Applied Computing Minor",
-          title: "Theory of Computation",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Formal languages, automata theory, computability",
-          units: [
-            "Finite Automata, Regular Languages",
-            "Context-Free Languages, Pushdown Automata",
-            "Turing Machines, Computability Theory"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 6,
-      courses: [
-        {
-          code: "CAP622J1",
-          type: "CT-1",
-          title: "Python Programming",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Python fundamentals, data structures, file handling",
-          units: [
-            "Python Basics, Control Structures",
-            "Functions, Lists, Comprehensions",
-            "Dictionaries, Tuples, Sets, File Operations"
-          ]
-        },
-        {
-          code: "CAP622J2",
-          type: "CT-2",
-          title: "Computer Organization & Architecture",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Computer architecture, assembly programming, memory systems",
-          units: [
-            "Basic Computer Organization",
-            "ALU, Instruction Formats, RISC/CISC",
-            "Memory Hierarchy, Cache Memory",
-            "I/O Organization, Parallel Processing"
-          ]
-        },
-        {
-          code: "CAP622J3",
-          type: "CT-3",
-          title: "Probability and Statistics",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Statistical concepts for data analysis",
-          units: [
-            "Probability Theory, Random Variables",
-            "Distributions, Central Limit Theorem",
-            "Statistical Inference, Regression",
-            "Hypothesis Testing, Statistical Analysis"
-          ]
-        },
-        {
-          code: "ACP622N",
-          type: "Applied Computing Minor",
-          title: "Artificial Intelligence",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "AI fundamentals, search algorithms, knowledge representation",
-          units: [
-            "AI Introduction, Intelligent Agents",
-            "Search Algorithms, Heuristic Search",
-            "Uncertainty, Probability, Bayes' Rule"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 7,
-      courses: [
-        {
-          code: "CAP722J1",
-          type: "CT-1",
-          title: "Cyber Security",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Security fundamentals, threats, best practices",
-          units: [
-            "Cybersecurity Fundamentals, Threats",
-            "Legal Framework, Data Privacy",
-            "E-commerce Security, Best Practices"
-          ]
-        },
-        {
-          code: "CAP722J2",
-          type: "CT-2",
-          title: "Java Programming",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Java programming, OOP, GUI, networking",
-          units: [
-            "Java Basics, OOP Concepts",
-            "Inheritance, Exception Handling",
-            "Multithreading, Applets",
-            "GUI Programming, I/O, Networking"
-          ]
-        },
-        {
-          code: "CAP722J3",
-          type: "CT-3",
-          title: "Machine Learning",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "ML algorithms, data mining, pattern recognition",
-          units: [
-            "ML Introduction, Feature Engineering",
-            "Supervised Learning, Decision Trees",
-            "Unsupervised Learning, Clustering",
-            "Bayesian Learning, Support Vector Machines"
-          ]
-        },
-        {
-          code: "ACP722N",
-          type: "Applied Computing Minor",
-          title: "Design & Analysis of Algorithms",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Algorithm design techniques, complexity analysis",
-          units: [
-            "Algorithm Analysis, Asymptotic Notations",
-            "Sorting, Searching, Greedy Algorithms",
-            "Dynamic Programming, Backtracking",
-            "P and NP Problems"
-          ]
-        }
-      ]
-    },
-    {
-      semester: 8,
-      courses: [
-        {
-          code: "CAP822J1",
-          type: "CT-1 (Honours)",
-          title: "Software Engineering",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Software development methodologies, testing, project management",
-          units: [
-            "Software Engineering Fundamentals",
-            "Requirements Engineering, COCOMO",
-            "Design Engineering, Testing"
-          ]
-        },
-        {
-          code: "CAP822J2",
-          type: "CT-2",
-          title: "Mini Project with Report",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Capstone project development and documentation",
-          units: []
-        },
-        {
-          code: "CAP822J3",
-          type: "CT-3",
-          title: "Mobile Application Development",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Android app development, mobile UI design",
-          units: [
-            "Mobile Development Fundamentals, Java",
-            "Android Platform, SDK, Development Tools",
-            "Android Components, Intents, Data Storage",
-            "UI Design, Database Integration"
-          ]
-        },
-        {
-          code: "CAP822RJ1",
-          type: "CT-1 (Research Honours)",
-          title: "Research Methodology",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Research methods for computer applications",
-          units: []
-        },
-        {
-          code: "CAP822P",
-          type: "Project (Research Honours)",
-          title: "Project with Dissertation",
-          theory_credits: 0,
-          practical_credits: 12,
-          description: "Major research project with dissertation",
-          units: []
-        },
-        {
-          code: "ACP822N",
-          type: "Applied Computing Minor",
-          title: "Cloud Computing",
-          theory_credits: 3,
-          practical_credits: 1,
-          description: "Cloud computing concepts, virtualization, cloud services",
-          units: [
-            "Cloud Computing Overview, Service Models",
-            "Virtualization, Cloud Infrastructure",
-            "Cloud Applications, Service Management"
+            {
+              title: "HTML5 Fundamentals and Semantic Markup",
+              topics: [
+                "HTML5 document structure and DOCTYPE declaration",
+                "Semantic HTML5 elements - header, nav, main, section, article, aside, footer",
+                "HTML forms - input types, validation, form controls",
+                "HTML5 multimedia elements - audio, video, canvas",
+                "HTML5 APIs - Geolocation, Local Storage, Web Workers",
+                "Accessibility in HTML - ARIA attributes, semantic markup",
+                "HTML5 metadata and SEO optimization",
+                "Progressive Web App basics with HTML5"
+              ]
+            },
+            {
+              title: "CSS3 Styling and Responsive Design",
+              topics: [
+                "CSS3 syntax, selectors, and specificity rules",
+                "CSS Box Model - margin, border, padding, content",
+                "CSS3 layout techniques - Flexbox, CSS Grid, Floats",
+                "Responsive web design principles and mobile-first approach",
+                "CSS3 media queries and breakpoints",
+                "Bootstrap framework - grid system, components, utilities",
+                "CSS3 animations and transitions",
+                "CSS preprocessors introduction - SASS/LESS basics"
+              ]
+            },
+            {
+              title: "JavaScript Programming Fundamentals",
+              topics: [
+                "JavaScript syntax, variables, and data types",
+                "JavaScript functions - declaration, expression, arrow functions",
+                "Control structures in JavaScript - if-else, loops, switch",
+                "JavaScript arrays and array methods",
+                "JavaScript objects and object-oriented programming",
+                "Error handling with try-catch blocks",
+                "JavaScript scope and closures",
+                "ES6 features - let/const, template literals, destructuring"
+              ]
+            },
+            {
+              title: "DOM Manipulation and Interactive Web Development",
+              topics: [
+                "Document Object Model (DOM) structure and navigation",
+                "DOM element selection and manipulation methods",
+                "Event handling - addEventListener, event delegation",
+                "Form validation and user input handling",
+                "AJAX and Fetch API for asynchronous operations",
+                "JSON data format and parsing",
+                "Local Storage and Session Storage usage",
+                "Basic JavaScript debugging techniques",
+                "Introduction to modern JavaScript frameworks"
+              ]
+            }
           ]
         }
       ]
@@ -442,13 +294,12 @@ document.addEventListener('DOMContentLoaded', function() {
 // Navigation Functions
 function initializeNavigation() {
   // Mobile navigation toggle
-  navToggle.addEventListener('click', function(e) {
-    e.preventDefault();
-    navMenu.classList.toggle('active');
-  });
-
-  // Main navigation click handler
-  document.addEventListener('click', handleNavigationClick);
+  if (navToggle) {
+    navToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      navMenu.classList.toggle('active');
+    });
+  }
 
   // Back button functionality
   const backButton = document.getElementById('backToCourses');
@@ -464,65 +315,12 @@ function initializeNavigation() {
   }
 }
 
-function handleNavigationClick(e) {
-  // Handle navigation links
-  if (e.target.matches('[data-page]') || e.target.closest('[data-page]')) {
-    e.preventDefault();
-    
-    const element = e.target.matches('[data-page]') ? e.target : e.target.closest('[data-page]');
-    const page = element.dataset.page;
-    const semester = element.dataset.semester;
-    const course = element.dataset.course;
-    
-    if (page === 'semester' && semester) {
-      showSemesterPage(parseInt(semester));
-    } else if (page === 'course' && course) {
-      showCourseDetail(course);
-    } else {
-      showPage(page);
-    }
-    
-    // Close mobile menu
-    navMenu.classList.remove('active');
-    
-    // Update active nav link
-    updateActiveNavLink(element);
-    return;
-  }
-
-  // Handle semester cards
-  if (e.target.closest('.semester-card')) {
-    e.preventDefault();
-    const semesterCard = e.target.closest('.semester-card');
-    const semester = parseInt(semesterCard.dataset.semester);
-    if (semester) {
-      showSemesterPage(semester);
-    }
-    return;
-  }
-
-  // Handle course cards
-  if (e.target.closest('.course-card')) {
-    e.preventDefault();
-    const courseCard = e.target.closest('.course-card');
-    const courseCode = courseCard.dataset.course;
-    if (courseCode) {
-      showCourseDetail(courseCode);
-    }
-    return;
-  }
-
-  // Handle hero buttons
-  if (e.target.matches('.btn[data-page]') || e.target.closest('.btn[data-page]')) {
-    e.preventDefault();
-    const button = e.target.matches('.btn[data-page]') ? e.target : e.target.closest('.btn[data-page]');
-    const page = button.dataset.page;
-    showPage(page);
-    return;
-  }
-}
-
 function initializeEventListeners() {
+  // Global click handler for all navigation
+  document.addEventListener('click', function(e) {
+    handleGlobalClick(e);
+  });
+
   // Smooth scrolling for anchor links
   document.addEventListener('click', function(e) {
     if (e.target.matches('a[href^="#"]')) {
@@ -535,6 +333,90 @@ function initializeEventListeners() {
   });
 }
 
+function handleGlobalClick(e) {
+  e.preventDefault();
+
+  // Handle accordion toggle
+  if (e.target.closest('.accordion-header')) {
+    const header = e.target.closest('.accordion-header');
+    toggleAccordion(header);
+    return;
+  }
+
+  // Handle navigation links with data-page attribute
+  const navElement = e.target.closest('[data-page]');
+  if (navElement) {
+    const page = navElement.dataset.page;
+    const semester = navElement.dataset.semester;
+    
+    if (page === 'semester' && semester) {
+      showSemesterPage(parseInt(semester));
+    } else {
+      showPage(page);
+    }
+    
+    // Close mobile menu
+    if (navMenu) {
+      navMenu.classList.remove('active');
+    }
+    
+    updateActiveNavLink(navElement);
+    return;
+  }
+
+  // Handle semester cards
+  const semesterCard = e.target.closest('.semester-card');
+  if (semesterCard) {
+    const semester = semesterCard.dataset.semester;
+    if (semester) {
+      showSemesterPage(parseInt(semester));
+      return;
+    }
+  }
+
+  // Handle course cards
+  const courseCard = e.target.closest('.course-card');
+  if (courseCard) {
+    const courseCode = courseCard.dataset.course;
+    if (courseCode) {
+      showCourseDetail(courseCode);
+      return;
+    }
+  }
+
+  // Handle buttons with data-page
+  const button = e.target.closest('.btn[data-page]');
+  if (button) {
+    const page = button.dataset.page;
+    const semester = button.dataset.semester;
+    
+    if (page === 'semester' && semester) {
+      showSemesterPage(parseInt(semester));
+    } else {
+      showPage(page);
+    }
+    return;
+  }
+}
+
+function toggleAccordion(header) {
+  const accordionItem = header.closest('.accordion-item');
+  const content = accordionItem.querySelector('.accordion-content');
+  const icon = header.querySelector('.accordion-icon');
+  
+  // Toggle active state
+  const isActive = accordionItem.classList.toggle('active');
+  
+  // Update icon rotation and content height
+  if (isActive) {
+    if (icon) icon.style.transform = 'rotate(180deg)';
+    if (content) content.style.maxHeight = content.scrollHeight + 'px';
+  } else {
+    if (icon) icon.style.transform = 'rotate(0deg)';
+    if (content) content.style.maxHeight = '0';
+  }
+}
+
 function initializeBackToTop() {
   window.addEventListener('scroll', function() {
     if (window.pageYOffset > 300) {
@@ -544,10 +426,12 @@ function initializeBackToTop() {
     }
   });
 
-  backToTop.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  if (backToTop) {
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 }
 
 function updateActiveNavLink(clickedLink) {
@@ -727,15 +611,40 @@ function generateCourseDetailHTML(course, semester) {
   if (course.units && course.units.length > 0) {
     html += `
       <div class="course-units">
-        <h3>Course Units</h3>
-        <ul class="unit-list">
+        <h3>Course Syllabus</h3>
+        <div class="accordion">
     `;
     
     course.units.forEach((unit, index) => {
-      html += `<li class="unit-item">Unit ${index + 1}: ${unit}</li>`;
+      html += `
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div class="accordion-title">
+              <span class="unit-number">Unit ${index + 1}</span>
+              <h4>${unit.title}</h4>
+            </div>
+            <div class="accordion-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="unit-topics">
+              <ul>
+      `;
+      
+      unit.topics.forEach(topic => {
+        html += `<li>${topic}</li>`;
+      });
+      
+      html += `
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
     });
     
-    html += '</ul></div>';
+    html += '</div></div>';
   }
   
   html += `
@@ -785,12 +694,12 @@ function searchCourses(query) {
 // Keyboard navigation support
 document.addEventListener('keydown', function(e) {
   // ESC key to close mobile menu
-  if (e.key === 'Escape') {
+  if (e.key === 'Escape' && navMenu) {
     navMenu.classList.remove('active');
   }
   
   // Enter key on focusable elements
-  if (e.key === 'Enter' && e.target.matches('[data-page], .course-card, .semester-card')) {
+  if (e.key === 'Enter' && e.target.matches('[data-page], .course-card, .semester-card, .accordion-header')) {
     e.target.click();
   }
 });
@@ -803,12 +712,22 @@ function addAccessibilityFeatures() {
     card.setAttribute('tabindex', '0');
     card.setAttribute('aria-label', card.querySelector('h3') ? `View details for ${card.querySelector('h3').textContent}` : 'View details');
   });
+  
+  // Add ARIA labels to accordion headers
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.setAttribute('role', 'button');
+    header.setAttribute('tabindex', '0');
+    header.setAttribute('aria-expanded', 'false');
+  });
 }
 
-// Initialize accessibility features
-document.addEventListener('DOMContentLoaded', function() {
-  addAccessibilityFeatures();
-});
+// Initialize accessibility features after content loads
+function initializeAccessibility() {
+  setTimeout(addAccessibilityFeatures, 100);
+}
+
+// Re-run accessibility setup when content changes
+document.addEventListener('DOMContentLoaded', initializeAccessibility);
 
 // Export functions for potential testing
 window.CAWebsite = {
