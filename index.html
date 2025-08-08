@@ -3,442 +3,1616 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Applications Program - University of Kashmir</title>
+    <title>Computer Applications - Government Degree College Beerwah</title>
+    <meta name="description" content="Bachelor of Computer Applications (BCA) program at Government Degree College Beerwah - Complete syllabus for all 8 semesters under NEP 2020">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <div class="nav-brand">
-                <h2><i class="fas fa-graduation-cap"></i> Computer Applications as Major</h2>
-                <span class="university">University of Kashmir</span>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="navbar-brand" href="#home">
+                <strong>GDC Beerwah</strong>
+                <small class="d-block">Computer Applications</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
-                <li class="nav-dropdown">
-                    <a href="#" class="nav-link">Semesters <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" data-page="semester" data-semester="1" class="nav-link">Semester 1</a></li>
-                        <li><a href="#" data-page="semester" data-semester="2" class="nav-link">Semester 2</a></li>
-                        <li><a href="#" data-page="semester" data-semester="3" class="nav-link">Semester 3</a></li>
-                        <li><a href="#" data-page="semester" data-semester="4" class="nav-link">Semester 4</a></li>
-                        <li><a href="#" data-page="semester" data-semester="5" class="nav-link">Semester 5</a></li>
-                        <li><a href="#" data-page="semester" data-semester="6" class="nav-link">Semester 6</a></li>
-                        <li><a href="#" data-page="semester" data-semester="7" class="nav-link">Semester 7</a></li>
-                        <li><a href="#" data-page="semester" data-semester="8" class="nav-link">Semester 8</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" data-page="program" class="nav-link">Program Details</a></li>
-                <li><a href="#" data-page="industry" class="nav-link">Career Prospects</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Semesters
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#semester1">Semester 1</a></li>
+                            <li><a class="dropdown-item" href="#semester2">Semester 2</a></li>
+                            <li><a class="dropdown-item" href="#semester3">Semester 3</a></li>
+                            <li><a class="dropdown-item" href="#semester4">Semester 4</a></li>
+                            <li><a class="dropdown-item" href="#semester5">Semester 5</a></li>
+                            <li><a class="dropdown-item" href="#semester6">Semester 6</a></li>
+                            <li><a class="dropdown-item" href="#semester7">Semester 7</a></li>
+                            <li><a class="dropdown-item" href="#semester8">Semester 8</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skill Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <input class="form-control me-2" type="search" id="searchInput" placeholder="Search courses...">
+                    <button class="btn btn--primary" type="button" id="searchBtn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-     <div class="container">
-    <main class="main-content" id="mainContent">
-        <!-- Home Page -->
-        <section id="homePage" class="page active">
-            <div class="hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1>Bachelor with Computer Applications as Major</h1>
-                        <p class="hero-subtitle">4-Year Comprehensive Program in Computer Applications</p>
-                        <div class="hero-stats">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Bachelor of Computer Applications</h1>
+                    <p class="hero-subtitle">Government Degree College Beerwah</p>
+                    <p class="hero-description">
+                        A comprehensive 4-year program under NEP 2020 Framework designed to create industry-ready computer application professionals with specializations in software development, web technologies, and emerging IT domains.
+                    </p>
+                    <div class="hero-stats row g-4 mb-4">
+                        <div class="col-6 col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">8</div>
+                                <div class="stat-number" data-target="8">0</div>
                                 <div class="stat-label">Semesters</div>
                             </div>
+                        </div>
+                        <div class="col-6 col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">30+</div>
+                                <div class="stat-number" data-target="160">0</div>
+                                <div class="stat-label">Credits</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="36">0</div>
                                 <div class="stat-label">Courses</div>
                             </div>
+                        </div>
+                        <div class="col-6 col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">2</div>
-                                <div class="stat-label">Program Types</div>
+                                <div class="stat-number" data-target="480">0</div>
+                                <div class="stat-label">Lab Hours</div>
                             </div>
                         </div>
-                        <div class="hero-buttons">
-                            <button class="btn btn--primary" data-page="program">Explore Program</button>
-                            <button class="btn btn--outline" data-page="industry">Career Insights</button>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#semester1" class="btn btn--primary btn--lg me-3">Explore Syllabus</a>
+                        <a href="#about" class="btn btn--outline btn--lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-features">
+                        <div class="feature-card">
+                            <i class="bi bi-code-slash"></i>
+                            <h4>Programming Excellence</h4>
+                            <p>Master C, C++, Java, Python, and modern web technologies</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="bi bi-shield-check"></i>
+                            <h4>Cybersecurity Focus</h4>
+                            <p>Learn network security, cryptography, and ethical hacking</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="bi bi-robot"></i>
+                            <h4>AI & Machine Learning</h4>
+                            <p>Explore artificial intelligence and data science applications</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="bi bi-cloud"></i>
+                            <h4>Cloud Computing</h4>
+                            <p>Deploy applications on modern cloud platforms</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="container">
-                <section class="program-overview">
-                    <h2>Program Overview</h2>
-                    <div class="overview-grid">
-                        <div class="overview-item">
-                            <div class="overview-icon" style="background-color: var(--color-bg-1);">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3>Programming Excellence</h3>
-                            <p>Master multiple programming languages including C, C++, Java, and Python with hands-on practical experience.</p>
-                        </div>
-                        <div class="overview-item">
-                            <div class="overview-icon" style="background-color: var(--color-bg-2);">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h3>Data Management</h3>
-                            <p>Learn database design, management systems, and data analysis techniques for modern applications.</p>
-                        </div>
-                        <div class="overview-item">
-                            <div class="overview-icon" style="background-color: var(--color-bg-3);">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <h3>Network & Security</h3>
-                            <p>Understand networking concepts, cybersecurity principles, and modern security practices.</p>
-                        </div>
-                        <div class="overview-item">
-                            <div class="overview-icon" style="background-color: var(--color-bg-4);">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h3>Emerging Technologies</h3>
-                            <p>Explore AI, Machine Learning, IoT, and Cloud Computing technologies shaping the future.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="semester-preview">
-                    <h2>Semester Structure</h2>
+    <!-- Semester Navigation -->
+    <section class="semester-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Choose Your Semester</h2>
                     <div class="semester-grid">
-                        <div class="semester-card" data-semester="1">
-                            <div class="semester-header">
-                                <h3>Semester 1</h3>
-                                <span class="course-count">2 Courses</span>
-                            </div>
-                            <p>Computer Fundamentals & Digital Electronics</p>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        <div class="semester-card" data-semester="2">
-                            <div class="semester-header">
-                                <h3>Semester 2</h3>
-                                <span class="course-count">2 Courses</span>
-                            </div>
-                            <p>Programming Fundamentals & Web Designing</p>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        <div class="semester-card" data-semester="3">
-                            <div class="semester-header">
-                                <h3>Semester 3</h3>
-                                <span class="course-count">2 Courses</span>
-                            </div>
-                            <p>Networks & Cryptography</p>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        <div class="semester-card" data-semester="4">
-                            <div class="semester-header">
-                                <h3>Semester 4</h3>
-                                <span class="course-count">4 Courses</span>
-                            </div>
-                            <p>Database, OOP, Mathematics & IoT</p>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+                        <a href="#semester1" class="semester-card">
+                            <div class="semester-number">1</div>
+                            <div class="semester-title">Foundation</div>
+                            <div class="semester-desc">Computer Fundamentals</div>
+                        </a>
+                        <a href="#semester2" class="semester-card">
+                            <div class="semester-number">2</div>
+                            <div class="semester-title">Programming</div>
+                            <div class="semester-desc">C Programming</div>
+                        </a>
+                        <a href="#semester3" class="semester-card">
+                            <div class="semester-number">3</div>
+                            <div class="semester-title">Networking</div>
+                            <div class="semester-desc">Networks & Security</div>
+                        </a>
+                        <a href="#semester4" class="semester-card">
+                            <div class="semester-number">4</div>
+                            <div class="semester-title">Specialization</div>
+                            <div class="semester-desc">DBMS, OOPs, Math</div>
+                        </a>
+                        <a href="#semester5" class="semester-card">
+                            <div class="semester-number">5</div>
+                            <div class="semester-title">Core Systems</div>
+                            <div class="semester-desc">OS, Data Structures</div>
+                        </a>
+                        <a href="#semester6" class="semester-card">
+                            <div class="semester-number">6</div>
+                            <div class="semester-title">Advanced Programming</div>
+                            <div class="semester-desc">Python, Architecture</div>
+                        </a>
+                        <a href="#semester7" class="semester-card">
+                            <div class="semester-number">7</div>
+                            <div class="semester-title">Industry Tech</div>
+                            <div class="semester-desc">Java, Cyber Security</div>
+                        </a>
+                        <a href="#semester8" class="semester-card">
+                            <div class="semester-number">8</div>
+                            <div class="semester-title">Capstone</div>
+                            <div class="semester-desc">Projects & Research</div>
+                        </a>
                     </div>
-                    <div class="text-center">
-                        <button class="btn btn--outline" data-page="semester" data-semester="1">View All Semesters</button>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <!-- Semester Page Template -->
-        <section id="semesterPage" class="page">
-            <div class="container">
-                <div class="page-header">
-                    <nav class="breadcrumb">
-                        <a href="#" data-page="home">Home</a> / <span id="semesterBreadcrumb">Semester</span>
-                    </nav>
-                    <h1 id="semesterTitle">Semester Courses</h1>
-                </div>
-                <div id="semesterContent" class="semester-courses">
-                    <!-- Dynamic semester content will be loaded here -->
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Course Detail Page -->
-        <section id="courseDetailPage" class="page">
-            <div class="container">
-                <div class="page-header">
-                    <nav class="breadcrumb">
-                        <a href="#" data-page="home">Home</a> / <span id="courseBreadcrumb">Course</span>
-                    </nav>
-                    <button class="btn btn--outline back-button" id="backToCourses">
-                        <i class="fas fa-arrow-left"></i> Back to Courses
-                    </button>
+    <!-- Semester 1 -->
+    <section id="semester1" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 1</li>
+                    </ol>
+                </nav>
+                <h2>Semester 1 - Foundation Semester</h2>
+                <p class="semester-description">Build fundamental understanding of computer systems, programming concepts, and digital technologies.</p>
+            </div>
+
+            <div class="row">
+                <!-- Major Course -->
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-title">
+                                <h5>CAP122J - Computer Fundamentals <span class="badge bg-primary">4+2 Credits</span></h5>
+                                <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#major1-details">
+                                    View Details <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="collapse" id="major1-details">
+                                <div class="course-details mt-3">
+                                    <h6>Learning Outcomes:</h6>
+                                    <ul>
+                                        <li>Understand computer system components and architecture</li>
+                                        <li>Master number systems and binary operations</li>
+                                        <li>Differentiate between software types and programming paradigms</li>
+                                        <li>Apply internet technologies for communication and web services</li>
+                                    </ul>
+                                    
+                                    <h6>Unit-wise Syllabus:</h6>
+                                    <div class="accordion" id="units1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit1-1">
+                                                    Unit I: Introduction to Computers & Data Representation
+                                                </button>
+                                            </h2>
+                                            <div id="unit1-1" class="accordion-collapse collapse" data-bs-parent="#units1">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Computer History and Evolution</li>
+                                                        <li>Generations of Computers</li>
+                                                        <li>Memory Hierarchy (Primary, Secondary, Cache)</li>
+                                                        <li>Input/Output Devices</li>
+                                                        <li>Number Systems (Binary, Octal, Hexadecimal)</li>
+                                                        <li>Binary Operations and Conversions</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit1-2">
+                                                    Unit II: Software Concepts
+                                                </button>
+                                            </h2>
+                                            <div id="unit1-2" class="accordion-collapse collapse" data-bs-parent="#units1">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>System Software vs Application Software</li>
+                                                        <li>Programming Languages (Low-level, High-level)</li>
+                                                        <li>Compilers vs Interpreters vs Assemblers</li>
+                                                        <li>Operating System Functions</li>
+                                                        <li>Software Development Life Cycle</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit1-3">
+                                                    Unit III: Networking Fundamentals
+                                                </button>
+                                            </h2>
+                                            <div id="unit1-3" class="accordion-collapse collapse" data-bs-parent="#units1">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Data Communication Modes</li>
+                                                        <li>Network Types (LAN, WAN, MAN)</li>
+                                                        <li>Network Topologies</li>
+                                                        <li>Communication Protocols (TCP/IP, HTTP)</li>
+                                                        <li>Network Components (Hub, Switch, Router)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit1-4">
+                                                    Unit IV: Internet & Web Technologies
+                                                </button>
+                                            </h2>
+                                            <div id="unit1-4" class="accordion-collapse collapse" data-bs-parent="#units1">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>World Wide Web (WWW)</li>
+                                                        <li>Web Browsers and Search Engines</li>
+                                                        <li>URLs and Domain Names</li>
+                                                        <li>Email Systems and Services</li>
+                                                        <li>E-governance and Digital India</li>
+                                                        <li>Web Hosting and Cloud Services</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6>Lab Practicals:</h6>
+                                    <ul>
+                                        <li>MS Word: Document formatting, tables, mail merge</li>
+                                        <li>MS Excel: Formulas, charts, pivot tables</li>
+                                        <li>MS PowerPoint: Presentations, animations, multimedia</li>
+                                        <li>Internet Usage: Browsing, downloading, online services</li>
+                                        <li>Email Setup: Creating accounts, sending attachments</li>
+                                    </ul>
+
+                                    <h6>Textbooks & References:</h6>
+                                    <ul>
+                                        <li>Fundamentals of Computers - V Rajaraman</li>
+                                        <li>Computer Today - Donald H. Sanders</li>
+                                        <li>Introduction to Computers - Peter Norton</li>
+                                    </ul>
+
+                                    <h6>Assessment Methods:</h6>
+                                    <ul>
+                                        <li>Mid-term Exam: 30%</li>
+                                        <li>End-term Exam: 50%</li>
+                                        <li>Lab Assessment: 20%</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="courseDetailContent">
-                    <!-- Dynamic course detail content with accordion will be loaded here -->
+
+                <!-- Minor Course -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-cpu text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP124N - Digital Electronics <span class="badge bg-info">4+2 Credits</span></h5>
+                            <p>Fundamentals of digital systems, boolean algebra, logic gates, and microprocessor basics.</p>
+                            <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#minor1-details">
+                                View Details <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="minor1-details">
+                                <div class="course-details mt-3">
+                                    <h6>Topics Covered:</h6>
+                                    <ul>
+                                        <li>Number Systems and Binary Codes</li>
+                                        <li>Boolean Algebra and Logic Simplification</li>
+                                        <li>Logic Gates (AND, OR, NOT, NAND, NOR, XOR)</li>
+                                        <li>Combinational Circuits (Adders, Multiplexers, Decoders)</li>
+                                        <li>Sequential Circuits (Flip-flops, Counters, Registers)</li>
+                                        <li>Introduction to Microprocessors (8085/8086)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Courses -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-tools text-warning"></i> Skill Courses</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="skill-course mb-3">
+                                <h6>JSD122S - Programming with C (Basic) <span class="badge bg-warning">2+2 Credits</span></h6>
+                                <p><small>Track: Junior Software Developer</small></p>
+                            </div>
+                            <div class="skill-course">
+                                <h6>WDP122S - Internet Basics and HTML <span class="badge bg-warning">2+2 Credits</span></h6>
+                                <p><small>Track: Web Developer</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Program Details Page -->
-        <section id="programPage" class="page">
-            <div class="container">
-                <div class="page-header">
-                    <nav class="breadcrumb">
-                        <a href="#" data-page="home">Home</a> / Program Details
-                    </nav>
-                    <h1>Program Information</h1>
+            <!-- Navigation -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#home" class="btn btn--outline">← Back to Home</a>
+                        <a href="#semester2" class="btn btn--primary">Next Semester →</a>
+                    </div>
                 </div>
-                
-                <div class="program-comparison">
-                    <div class="comparison-grid">
-                        <div class="program-card">
-                            <div class="program-header">
-                                <h2>Honours Program</h2>
-                                <div class="program-badge">Honours Track</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 2 -->
+    <section id="semester2" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 2</li>
+                    </ol>
+                </nav>
+                <h2>Semester 2 - Programming Foundation</h2>
+                <p class="semester-description">Master programming fundamentals with C language and web designing technologies.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-title">
+                                <h5>CAP222J - Programming Fundamentals through C <span class="badge bg-primary">4+2 Credits</span></h5>
+                                <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#major2-details">
+                                    View Details <i class="bi bi-chevron-down"></i>
+                                </button>
                             </div>
-                            <div class="program-content">
-                                <h4>Course Structure:</h4>
-                                <ul>
-                                    <li>Core Theory and Practical Courses</li>
-                                    <li>Applied Computing Minor</li>
-                                    <li>Mini Project with Report (Semester 8)</li>
-                                    <li>Software Engineering Focus</li>
-                                </ul>
-                                <h4>Career Outcomes:</h4>
-                                <ul>
-                                    <li>Software Development</li>
-                                    <li>Web Development</li>
-                                    <li>System Administration</li>
-                                    <li>Database Management</li>
-                                </ul>
+                            <div class="collapse" id="major2-details">
+                                <div class="course-details mt-3">
+                                    <h6>Learning Outcomes:</h6>
+                                    <ul>
+                                        <li>Design and implement algorithms using flowcharts and pseudocode</li>
+                                        <li>Write efficient C programs using control structures</li>
+                                        <li>Implement functions and understand parameter passing mechanisms</li>
+                                        <li>Work with arrays, pointers, and dynamic memory allocation</li>
+                                    </ul>
+                                    
+                                    <div class="accordion" id="units2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit2-1">
+                                                    Unit I: Programming Languages & Algorithms
+                                                </button>
+                                            </h2>
+                                            <div id="unit2-1" class="accordion-collapse collapse" data-bs-parent="#units2">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Programming Language Paradigms</li>
+                                                        <li>Algorithm Design Techniques</li>
+                                                        <li>Flowcharts and Pseudocode</li>
+                                                        <li>Problem Solving Strategies</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit2-2">
+                                                    Unit II: Introduction to C Programming
+                                                </button>
+                                            </h2>
+                                            <div id="unit2-2" class="accordion-collapse collapse" data-bs-parent="#units2">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>C Language Basics and History</li>
+                                                        <li>Data Types and Variables</li>
+                                                        <li>Operators (Arithmetic, Logical, Relational)</li>
+                                                        <li>Control Structures (if-else, switch, loops)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit2-3">
+                                                    Unit III: Functions and Pointers
+                                                </button>
+                                            </h2>
+                                            <div id="unit2-3" class="accordion-collapse collapse" data-bs-parent="#units2">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Function Declaration and Definition</li>
+                                                        <li>Parameter Passing (by value, by reference)</li>
+                                                        <li>Recursion and Recursive Functions</li>
+                                                        <li>Pointers and Memory Addressing</li>
+                                                        <li>Arrays and Pointer Arithmetic</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unit2-4">
+                                                    Unit IV: Advanced C Concepts
+                                                </button>
+                                            </h2>
+                                            <div id="unit2-4" class="accordion-collapse collapse" data-bs-parent="#units2">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>String Handling and String Functions</li>
+                                                        <li>Structures and Unions</li>
+                                                        <li>File Input/Output Operations</li>
+                                                        <li>Dynamic Memory Allocation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="program-card highlighted">
-                            <div class="program-header">
-                                <h2>Honours with Research</h2>
-                                <div class="program-badge">Research Track</div>
-                            </div>
-                            <div class="program-content">
-                                <h4>Course Structure:</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-globe text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP222N - Web Designing <span class="badge bg-info">4+2 Credits</span></h5>
+                            <p>Modern web development with HTML5, CSS3, JavaScript, and responsive design frameworks.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
                                 <ul>
-                                    <li>All Honours Program Courses</li>
-                                    <li>Research Methodology (Semester 8)</li>
-                                    <li>Major Project with Dissertation</li>
-                                    <li>Advanced Research Focus</li>
-                                </ul>
-                                <h4>Career Outcomes:</h4>
-                                <ul>
-                                    <li>Research & Development</li>
-                                    <li>Higher Studies (Direct Admission to PhD)</li>
-                                    <li>Academic Career</li>
-                                    <li>Advanced Technology Roles</li>
+                                    <li>HTML5 Elements and Semantic Structure</li>
+                                    <li>CSS3 Styling, Animations, and Flexbox</li>
+                                    <li>JavaScript DOM Manipulation</li>
+                                    <li>Bootstrap Framework</li>
+                                    <li>Responsive Web Design</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="program-details">
-                    <div class="detail-card">
-                        <h3>Program Duration & Structure</h3>
-                        <div class="detail-content">
-                            <p><strong>Duration:</strong> 4 Years (8 Semesters)</p>
-                            <p><strong>Total Credits:</strong> Varies by track</p>
-                            <p><strong>Assessment:</strong> Theory + Practical + Projects</p>
-                            <p><strong>University:</strong> University of Kashmir</p>
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-tools text-warning"></i> Skill Courses</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="skill-course mb-3">
+                                <h6>JSD222S - Programming with Python <span class="badge bg-warning">2+2 Credits</span></h6>
+                                <p><small>Track: Junior Software Developer</small></p>
+                            </div>
+                            <div class="skill-course">
+                                <h6>WDP222S - JavaScript and CSS Basics <span class="badge bg-warning">2+2 Credits</span></h6>
+                                <p><small>Track: Web Developer</small></p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester1" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester3" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 3 -->
+    <section id="semester3" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 3</li>
+                    </ol>
+                </nav>
+                <h2>Semester 3 - Networking & Security</h2>
+                <p class="semester-description">Explore data communication, computer networks, and cryptographic security systems.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>CAP322J - Data Communication & Computer Networks <span class="badge bg-primary">4+2 Credits</span></h5>
+                            <p>Comprehensive study of network protocols, architectures, and communication systems.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>OSI and TCP/IP Reference Models</li>
+                                    <li>Physical Layer Technologies</li>
+                                    <li>Data Link Layer Protocols</li>
+                                    <li>Network Layer Routing Algorithms</li>
+                                    <li>Transport Layer (TCP/UDP)</li>
+                                    <li>Application Layer Services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-shield-lock text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP323N - Cryptography & Network Security <span class="badge bg-info">4+2 Credits</span></h5>
+                            <p>Security mechanisms, encryption algorithms, and network protection strategies.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>Classical Cipher Techniques</li>
+                                    <li>Modern Symmetric Encryption (DES, AES)</li>
+                                    <li>Public Key Cryptography (RSA)</li>
+                                    <li>Digital Signatures and Hash Functions</li>
+                                    <li>Network Security Protocols (SSL/TLS)</li>
+                                    <li>Firewall and Intrusion Detection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-tools text-warning"></i> Skill Courses</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="skill-course mb-3">
+                                        <h6>JSD322S - Advanced Python Programming <span class="badge bg-warning">2+2 Credits</span></h6>
+                                        <p><small>Track: Junior Software Developer</small></p>
+                                        <ul>
+                                            <li>Object-Oriented Programming in Python</li>
+                                            <li>Exception Handling and File Operations</li>
+                                            <li>Database Connectivity with Python</li>
+                                            <li>GUI Development with Tkinter</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="skill-course">
+                                        <h6>WDP322S - Introduction to PHP and MySQL <span class="badge bg-warning">2+2 Credits</span></h6>
+                                        <p><small>Track: Web Developer</small></p>
+                                        <ul>
+                                            <li>PHP Syntax and Control Structures</li>
+                                            <li>MySQL Database Design</li>
+                                            <li>PHP-MySQL Integration</li>
+                                            <li>Session Management and Cookies</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester2" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester4" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 4 -->
+    <section id="semester4" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 4</li>
+                    </ol>
+                </nav>
+                <h2>Semester 4 - Specialization Foundation</h2>
+                <p class="semester-description">Choose your specialization track: Database Systems, Object-Oriented Programming, or Computing Mathematics.</p>
+            </div>
+
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i>
+                <strong>Track Selection:</strong> Students must choose one of the three Career Tracks (CT) for their specialization.
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course Tracks</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-1: CAP422J1 - DBMS <span class="badge bg-primary">3+1 Credits</span></h6>
+                                        <p>Database design, SQL, normalization, and database administration.</p>
+                                        <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#ct1-details">
+                                            View Details
+                                        </button>
+                                        <div class="collapse" id="ct1-details">
+                                            <div class="mt-2">
+                                                <ul>
+                                                    <li>ER Model and Database Design</li>
+                                                    <li>Relational Model and Normalization</li>
+                                                    <li>SQL Queries and Joins</li>
+                                                    <li>Transaction Processing</li>
+                                                    <li>Database Security</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-2: CAP422J2 - OOPs with C++ <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Object-oriented programming concepts using C++ language.</p>
+                                        <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#ct2-details">
+                                            View Details
+                                        </button>
+                                        <div class="collapse" id="ct2-details">
+                                            <div class="mt-2">
+                                                <ul>
+                                                    <li>Classes and Objects</li>
+                                                    <li>Inheritance and Polymorphism</li>
+                                                    <li>Operator Overloading</li>
+                                                    <li>Templates and STL</li>
+                                                    <li>Exception Handling</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-3: CAP422J3 - Computing Mathematics <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Mathematical foundations for computer science and algorithms.</p>
+                                        <button class="btn btn--outline btn--sm" data-bs-toggle="collapse" data-bs-target="#ct3-details">
+                                            View Details
+                                        </button>
+                                        <div class="collapse" id="ct3-details">
+                                            <div class="mt-2">
+                                                <ul>
+                                                    <li>Linear Algebra and Matrices</li>
+                                                    <li>Calculus and Optimization</li>
+                                                    <li>Graph Theory</li>
+                                                    <li>Numerical Methods</li>
+                                                    <li>Statistical Computing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-wifi text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP422N - IoT Fundamentals <span class="badge bg-info">3+1 Credits</span></h5>
+                            <p>Internet of Things concepts, sensors, connectivity, and smart device programming.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>IoT Architecture and Components</li>
+                                    <li>Sensors and Actuators</li>
+                                    <li>Communication Protocols (MQTT, CoAP)</li>
+                                    <li>Arduino and Raspberry Pi Programming</li>
+                                    <li>Cloud Platforms for IoT</li>
+                                    <li>Smart City and Industry 4.0 Applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester3" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester5" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 5 -->
+    <section id="semester5" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 5</li>
+                    </ol>
+                </nav>
+                <h2>Semester 5 - Core Specialization</h2>
+                <p class="semester-description">Advanced study in your chosen specialization track with core computer science subjects.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course Tracks</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-1: CAP522J1 - Operating System <span class="badge bg-primary">3+1 Credits</span></h6>
+                                        <p>System software, process management, and resource allocation.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Process and Thread Management</li>
+                                                <li>CPU Scheduling Algorithms</li>
+                                                <li>Memory Management</li>
+                                                <li>File System Implementation</li>
+                                                <li>Deadlock Prevention</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-2: CAP522J2 - Data Structures using C <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Linear and non-linear data structures with practical implementation.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Arrays, Stacks, and Queues</li>
+                                                <li>Linked Lists (Single, Double, Circular)</li>
+                                                <li>Trees (Binary, BST, AVL)</li>
+                                                <li>Graphs and Graph Algorithms</li>
+                                                <li>Searching and Sorting Algorithms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-3: CAP522J3 - Discrete Mathematics <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Mathematical structures and logic for computer science applications.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Set Theory and Relations</li>
+                                                <li>Mathematical Logic</li>
+                                                <li>Combinatorics and Counting</li>
+                                                <li>Graph Theory Applications</li>
+                                                <li>Boolean Algebra</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-cpu-fill text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP522N - Theory of Computation <span class="badge bg-info">3+1 Credits</span></h5>
+                            <p>Formal languages, automata theory, and computational complexity.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>Finite Automata and Regular Languages</li>
+                                    <li>Context-Free Grammars</li>
+                                    <li>Pushdown Automata</li>
+                                    <li>Turing Machines</li>
+                                    <li>Computability and Decidability</li>
+                                    <li>P vs NP Problem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester4" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester6" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 6 -->
+    <section id="semester6" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 6</li>
+                    </ol>
+                </nav>
+                <h2>Semester 6 - Advanced Programming</h2>
+                <p class="semester-description">Master advanced programming languages and computer architecture concepts.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course Tracks</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-1: CAP622J1 - Python Programming <span class="badge bg-primary">3+1 Credits</span></h6>
+                                        <p>Advanced Python programming with libraries and frameworks.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Advanced Python Concepts</li>
+                                                <li>NumPy and Pandas for Data Science</li>
+                                                <li>Web Development with Django/Flask</li>
+                                                <li>API Development and Testing</li>
+                                                <li>Python for Automation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-2: CAP622J2 - Computer Organization & Architecture <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Hardware-software interface and computer system design.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>CPU Architecture and Design</li>
+                                                <li>Instruction Set Architecture</li>
+                                                <li>Memory Hierarchy and Caching</li>
+                                                <li>I/O Systems and Interrupts</li>
+                                                <li>Pipeline and Parallel Processing</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-3: CAP622J3 - Probability and Statistics <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Statistical methods for data analysis and decision making.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Probability Distributions</li>
+                                                <li>Hypothesis Testing</li>
+                                                <li>Regression Analysis</li>
+                                                <li>Statistical Computing with R</li>
+                                                <li>Bayesian Statistics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-robot text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP622N - Artificial Intelligence <span class="badge bg-info">3+1 Credits</span></h5>
+                            <p>AI fundamentals, machine learning algorithms, and intelligent systems.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>AI Problem Solving and Search</li>
+                                    <li>Knowledge Representation</li>
+                                    <li>Expert Systems</li>
+                                    <li>Machine Learning Basics</li>
+                                    <li>Neural Networks Introduction</li>
+                                    <li>Natural Language Processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester5" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester7" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 7 -->
+    <section id="semester7" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 7</li>
+                    </ol>
+                </nav>
+                <h2>Semester 7 - Industry Technologies</h2>
+                <p class="semester-description">Explore cutting-edge technologies used in modern software industry.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-primary"></i> Major Course Tracks</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-1: CAP722J1 - Cyber Security <span class="badge bg-primary">3+1 Credits</span></h6>
+                                        <p>Advanced cybersecurity concepts and ethical hacking techniques.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Vulnerability Assessment</li>
+                                                <li>Penetration Testing</li>
+                                                <li>Incident Response</li>
+                                                <li>Digital Forensics</li>
+                                                <li>Security Compliance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-2: CAP722J2 - Java Programming <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Enterprise Java development with frameworks and design patterns.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Core Java and OOP</li>
+                                                <li>Java Collections Framework</li>
+                                                <li>Multithreading and Concurrency</li>
+                                                <li>JDBC and Database Programming</li>
+                                                <li>Spring Framework Introduction</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-3: CAP722J3 - Machine Learning <span class="badge bg-primary">4+2 Credits</span></h6>
+                                        <p>Advanced machine learning algorithms and deep learning concepts.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Supervised Learning Algorithms</li>
+                                                <li>Unsupervised Learning</li>
+                                                <li>Deep Neural Networks</li>
+                                                <li>Computer Vision</li>
+                                                <li>Model Evaluation and Deployment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-graph-up text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP722N - Design & Analysis of Algorithms <span class="badge bg-info">3+1 Credits</span></h5>
+                            <p>Algorithm design techniques, complexity analysis, and optimization strategies.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>Algorithm Complexity Analysis</li>
+                                    <li>Divide and Conquer Strategies</li>
+                                    <li>Dynamic Programming</li>
+                                    <li>Greedy Algorithms</li>
+                                    <li>Graph Algorithms</li>
+                                    <li>String Matching Algorithms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester6" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#semester8" class="btn btn--primary">Next Semester →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semester 8 -->
+    <section id="semester8" class="semester-section">
+        <div class="container">
+            <div class="semester-header">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                        <li class="breadcrumb-item active">Semester 8</li>
+                    </ol>
+                </nav>
+                <h2>Semester 8 - Capstone & Specialization</h2>
+                <p class="semester-description">Complete your degree with capstone projects and choose between Honours or Research track.</p>
+            </div>
+
+            <div class="alert alert-warning">
+                <i class="bi bi-exclamation-triangle"></i>
+                <strong>Track Selection:</strong> Students must choose between Honours Track or Honours with Research Track.
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-award-fill text-success"></i> Honours Track</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-1: CAP822J1 - Software Engineering <span class="badge bg-success">3+1 Credits</span></h6>
+                                        <p>Software development methodologies and project management.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>SDLC Models (Waterfall, Agile)</li>
+                                                <li>Requirements Engineering</li>
+                                                <li>Software Design Patterns</li>
+                                                <li>Testing and Quality Assurance</li>
+                                                <li>Project Management</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-2: CAP822J2 - Mini Project <span class="badge bg-success">4+2 Credits</span></h6>
+                                        <p>Hands-on software development project with documentation.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Project Planning and Design</li>
+                                                <li>Implementation using chosen technology</li>
+                                                <li>Testing and Deployment</li>
+                                                <li>Documentation and Presentation</li>
+                                                <li>Peer Review and Evaluation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="track-card">
+                                        <h6>CT-3: CAP822J3 - Mobile App Development <span class="badge bg-success">4+2 Credits</span></h6>
+                                        <p>Native and cross-platform mobile application development.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Android Development with Kotlin</li>
+                                                <li>iOS Development Basics</li>
+                                                <li>Cross-platform with React Native</li>
+                                                <li>Mobile UI/UX Design</li>
+                                                <li>App Store Deployment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-mortarboard-fill text-danger"></i> Honours with Research Track</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="track-card">
+                                        <h6>CAP822RJ1 - Research Methodology <span class="badge bg-danger">3+1 Credits</span></h6>
+                                        <p>Research methods, literature review, and academic writing.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Research Design and Methods</li>
+                                                <li>Literature Review Techniques</li>
+                                                <li>Data Collection and Analysis</li>
+                                                <li>Statistical Tools for Research</li>
+                                                <li>Academic Writing and Citation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="track-card">
+                                        <h6>CAP822P - Project with Dissertation <span class="badge bg-danger">12 Credits</span></h6>
+                                        <p>Independent research project with thesis submission.</p>
+                                        <div class="course-details">
+                                            <ul>
+                                                <li>Research Problem Identification</li>
+                                                <li>Supervisor Allocation and Guidance</li>
+                                                <li>Implementation and Experimentation</li>
+                                                <li>Thesis Writing (8000+ words)</li>
+                                                <li>Viva Voce and Defense</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-cloud-fill text-info"></i> Minor Course</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>ACP822N - Cloud Computing <span class="badge bg-info">3+1 Credits</span></h5>
+                            <p>Cloud platforms, services, and modern deployment strategies.</p>
+                            <div class="course-details">
+                                <h6>Topics Covered:</h6>
+                                <ul>
+                                    <li>Cloud Service Models (IaaS, PaaS, SaaS)</li>
+                                    <li>AWS/Azure/Google Cloud Platforms</li>
+                                    <li>Containerization with Docker</li>
+                                    <li>Kubernetes Orchestration</li>
+                                    <li>Serverless Computing</li>
+                                    <li>DevOps and CI/CD Pipelines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="semester-navigation">
+                        <a href="#semester7" class="btn btn--outline">← Previous Semester</a>
+                        <a href="#skills" class="btn btn--primary">Skill Courses →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Courses Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5">Skill Enhancement Courses</h2>
+                    <p class="text-center mb-5">Specialized vocational training aligned with industry requirements under National Skills Qualification Framework (NSQF).</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card skill-track-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-code-square text-primary"></i> Junior Software Developer Track</h4>
+                            <span class="badge bg-primary">NSQF Level 4</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Develop programming skills from basic to advanced level with industry-standard practices.</p>
+                            
+                            <div class="skill-course-list">
+                                <div class="skill-course-item">
+                                    <h6>Semester 1: JSD122S - Programming with C (Basic)</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>C Language Fundamentals</li>
+                                        <li>Control Structures and Functions</li>
+                                        <li>Basic Problem Solving</li>
+                                        <li>Code Documentation</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-course-item">
+                                    <h6>Semester 2: JSD222S - Programming with Python</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>Python Syntax and Data Types</li>
+                                        <li>Object-Oriented Programming</li>
+                                        <li>File Handling and Modules</li>
+                                        <li>GUI Programming with Tkinter</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-course-item">
+                                    <h6>Semester 3: JSD322S - Advanced Python Programming</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>Web Scraping and APIs</li>
+                                        <li>Database Programming</li>
+                                        <li>Testing and Debugging</li>
+                                        <li>Version Control with Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card skill-track-card">
+                        <div class="card-header">
+                            <h4><i class="bi bi-globe text-success"></i> Web Developer Track</h4>
+                            <span class="badge bg-success">NSQF Level 5</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Master full-stack web development from frontend to backend technologies.</p>
+                            
+                            <div class="skill-course-list">
+                                <div class="skill-course-item">
+                                    <h6>Semester 1: WDP122S - Internet Basics and HTML</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>HTML5 Semantic Elements</li>
+                                        <li>Forms and Input Validation</li>
+                                        <li>Multimedia Integration</li>
+                                        <li>Web Accessibility Standards</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-course-item">
+                                    <h6>Semester 2: WDP222S - JavaScript and CSS Basics</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>CSS3 Advanced Styling</li>
+                                        <li>Responsive Design with Flexbox/Grid</li>
+                                        <li>JavaScript DOM Manipulation</li>
+                                        <li>Event Handling and AJAX</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-course-item">
+                                    <h6>Semester 3: WDP322S - Introduction to PHP and MySQL</h6>
+                                    <span class="badge bg-secondary">2+2 Credits</span>
+                                    <ul>
+                                        <li>Server-side Programming with PHP</li>
+                                        <li>MySQL Database Design</li>
+                                        <li>CRUD Operations</li>
+                                        <li>Session Management and Security</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">About the Department</h2>
                     
-                    <div class="detail-card">
-                        <h3>Learning Outcomes</h3>
-                        <div class="detail-content">
-                            <ul>
-                                <li>Proficiency in multiple programming languages</li>
-                                <li>Understanding of computer systems and architecture</li>
-                                <li>Database design and management skills</li>
-                                <li>Network security and cryptography knowledge</li>
-                                <li>Modern technology expertise (AI/ML, Cloud, IoT)</li>
-                                <li>Software engineering principles</li>
-                                <li>Research methodology (Research Honours)</li>
-                            </ul>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-bullseye text-primary"></i> Our Mission</h5>
+                                    <p>To provide quality education in computer applications, fostering innovation, critical thinking, and technical excellence to prepare students for successful careers in the IT industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-eye text-success"></i> Our Vision</h5>
+                                    <p>To be a leading department in computer applications education, recognized for academic excellence, research contributions, and industry-ready graduates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <h4 class="mb-4">Department Highlights</h4>
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="stat-card">
+                                    <h3>2008</h3>
+                                    <p>Established</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="stat-card">
+                                    <h3>15+</h3>
+                                    <p>Years of Excellence</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="stat-card">
+                                    <h3>500+</h3>
+                                    <p>Alumni Placed</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="stat-card">
+                                    <h3>8+</h3>
+                                    <p>Industry Partners</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Industry Insights Page -->
-        <section id="industryPage" class="page">
-            <div class="container">
-                <div class="page-header">
-                    <nav class="breadcrumb">
-                        <a href="#" data-page="home">Home</a> / Career Prospects
-                    </nav>
-                    <h1>Industry Insights & Career Prospects</h1>
+    <!-- Careers Section -->
+    <section id="careers" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5">Career Prospects</h2>
+                    <p class="text-center mb-5">Our graduates are well-prepared for diverse career opportunities in the rapidly evolving IT industry.</p>
                 </div>
+            </div>
 
-                <div class="industry-stats">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-icon" style="background-color: var(--color-bg-3);">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>15-20%</h3>
-                            <p>Annual Growth Rate</p>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="career-grid">
+                        <div class="career-card">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Software Developer</h5>
+                            <p>Design and develop applications using various programming languages</p>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-icon" style="background-color: var(--color-bg-1);">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <h3>9-10 Lakh</h3>
-                            <p>New Jobs by 2025</p>
+                        <div class="career-card">
+                            <i class="bi bi-globe"></i>
+                            <h5>Web Developer</h5>
+                            <p>Create dynamic websites and web applications</p>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-icon" style="background-color: var(--color-bg-2);">
-                                <i class="fas fa-rupee-sign"></i>
-                            </div>
-                            <h3>₹2.5-20 LPA</h3>
-                            <p>Salary Range</p>
+                        <div class="career-card">
+                            <i class="bi bi-server"></i>
+                            <h5>Database Administrator</h5>
+                            <p>Manage and optimize database systems</p>
+                        </div>
+                        <div class="career-card">
+                            <i class="bi bi-diagram-3"></i>
+                            <h5>System Analyst</h5>
+                            <p>Analyze business requirements and design IT solutions</p>
+                        </div>
+                        <div class="career-card">
+                            <i class="bi bi-shield-check"></i>
+                            <h5>Cybersecurity Specialist</h5>
+                            <p>Protect organizations from digital threats</p>
+                        </div>
+                        <div class="career-card">
+                            <i class="bi bi-bar-chart"></i>
+                            <h5>Data Scientist</h5>
+                            <p>Extract insights from complex datasets</p>
+                        </div>
+                        <div class="career-card">
+                            <i class="bi bi-phone"></i>
+                            <h5>Mobile App Developer</h5>
+                            <p>Build applications for mobile platforms</p>
+                        </div>
+                        <div class="career-card">
+                            <i class="bi bi-cloud"></i>
+                            <h5>Cloud Architect</h5>
+                            <p>Design and implement cloud-based solutions</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="career-paths">
-                    <h2>Top Career Paths</h2>
-                    <div class="careers-grid">
-                        <div class="career-card">
-                            <div class="career-header">
-                                <h3>Software Development</h3>
-                                <span class="percentage">28%</span>
-                            </div>
-                            <div class="career-details">
-                                <p><strong>Average Salary:</strong> ₹6-12 LPA</p>
-                                <p><strong>Growth Rate:</strong> 22%</p>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 28%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="career-card">
-                            <div class="career-header">
-                                <h3>Data Science & Analytics</h3>
-                                <span class="percentage">18%</span>
-                            </div>
-                            <div class="career-details">
-                                <p><strong>Average Salary:</strong> ₹8-15 LPA</p>
-                                <p><strong>Growth Rate:</strong> 31%</p>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 18%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="career-card">
-                            <div class="career-header">
-                                <h3>Web Development</h3>
-                                <span class="percentage">15%</span>
-                            </div>
-                            <div class="career-details">
-                                <p><strong>Average Salary:</strong> ₹5-10 LPA</p>
-                                <p><strong>Growth Rate:</strong> 15%</p>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 15%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="career-card">
-                            <div class="career-header">
-                                <h3>Cybersecurity</h3>
-                                <span class="percentage">12%</span>
-                            </div>
-                            <div class="career-details">
-                                <p><strong>Average Salary:</strong> ₹7-14 LPA</p>
-                                <p><strong>Growth Rate:</strong> 31%</p>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 12%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="industry-section">
-                    <h2>Top Recruiters</h2>
-                    <div class="recruiters-grid">
-                        <div class="recruiter-badge">TCS</div>
-                        <div class="recruiter-badge">Infosys</div>
-                        <div class="recruiter-badge">Wipro</div>
-                        <div class="recruiter-badge">Microsoft</div>
-                        <div class="recruiter-badge">Google</div>
-                        <div class="recruiter-badge">Amazon</div>
-                        <div class="recruiter-badge">HCL</div>
-                        <div class="recruiter-badge">Cognizant</div>
-                    </div>
-                </div>
-
-                <div class="industry-section">
-                    <h2>Trending Technologies</h2>
-                    <div class="tech-trends">
-                        <div class="trend-item">
-                            <i class="fas fa-brain"></i>
-                            <span>Artificial Intelligence & Machine Learning</span>
-                        </div>
-                        <div class="trend-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Computing</span>
-                        </div>
-                        <div class="trend-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Cybersecurity</span>
-                        </div>
-                        <div class="trend-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Data Science</span>
-                        </div>
-                        <div class="trend-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Mobile Development</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="future-prospects">
-                    <h2>Future Perspectives</h2>
-                    <div class="prospects-content">
-                        <div class="prospect-item">
-                            <h3>Industry 4.0 Integration</h3>
-                            <p>Growing demand for professionals who can bridge traditional computing with IoT, AI, and automation technologies.</p>
-                        </div>
-                        <div class="prospect-item">
-                            <h3>Digital Transformation</h3>
-                            <p>Organizations across all sectors are digitizing, creating unprecedented opportunities for computer application graduates.</p>
-                        </div>
-                        <div class="prospect-item">
-                            <h3>Emerging Technologies</h3>
-                            <p>Quantum computing, blockchain, and edge computing present new frontiers for skilled professionals.</p>
-                        </div>
-                        <div class="prospect-item">
-                            <h3>Research Opportunities</h3>
-                            <p>Growing R&D investments in technology create pathways for research-oriented careers and higher studies.</p>
+                    <div class="industry-partners mt-5">
+                        <h4 class="text-center mb-4">Our Industry Partners</h4>
+                        <div class="partner-logos">
+                            <span class="partner-logo">Microsoft</span>
+                            <span class="partner-logo">Google</span>
+                            <span class="partner-logo">Amazon</span>
+                            <span class="partner-logo">IBM</span>
+                            <span class="partner-logo">TCS</span>
+                            <span class="partner-logo">Infosys</span>
+                            <span class="partner-logo">Wipro</span>
+                            <span class="partner-logo">Accenture</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-</div>
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">Contact Us</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-geo-alt text-primary"></i> Address</h5>
+                                    <p>Government Degree College Beerwah<br>
+                                    Beerwah, Budgam<br>
+                                    Jammu & Kashmir, India<br>
+                                    PIN: 191112</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-telephone text-success"></i> Contact Information</h5>
+                                    <p><strong>Phone:</strong> +91-1951-424XXX<br>
+                                    <strong>Email:</strong> ca.dept@gdcbeerwah.ac.in<br>
+                                    <strong>Website:</strong> www.gdcbeerwah.edu.in</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form mt-4">
+                        <h4 class="mb-4">Send us a Message</h4>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Government Degree College Beerwah</h5>
+                    <p>Department of Computer Applications</p>
+                    <p class="text-muted">Nurturing future IT professionals since 2008</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#semester1">Syllabus</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="btn btn--outline btn--sm me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn--outline btn--sm me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn--outline btn--sm me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn--outline btn--sm me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; 2024 Government Degree College Beerwah. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
