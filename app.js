@@ -1,796 +1,611 @@
-// Computer Applications Website JavaScript
+// Computer Applications Website JavaScript - Fixed Version
 
-// Application data with full syllabus
-const programData = {
-  program_info: {
-    name: "Bachelor with Computer Applications as Major",
-    duration: "4 Years",
-    types: ["Honours", "Honours with Research"],
-    university: "University of Kashmir"
-  },
-  semesters: [
-    {
-      semester: 1,
-      courses: [
-        {
-          code: "CAP122J",
-          type: "CT-1",
-          title: "Computer Fundamentals",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Introduction to computers, data representation, software/hardware concepts, networking basics",
-          units: [
-            {
-              title: "Introduction to Computers and Data Processing",
-              topics: [
-                "History and Evolution of Computers",
-                "Generation of Computers - Vacuum tubes, Transistors, Integrated Circuits, Microprocessors, AI",
-                "Classification of Computers - Analog, Digital, Hybrid",
-                "Computer Organization - Input, Processing, Output, Storage",
-                "Data vs Information - Data Processing Cycle",
-                "Memory Hierarchy - Primary Memory (RAM, ROM), Secondary Memory (HDD, SSD)",
-                "Cache Memory and Virtual Memory concepts"
-              ]
-            },
-            {
-              title: "Software Systems and Programming Languages",
-              topics: [
-                "System Software - Operating Systems, Device Drivers, Utilities",
-                "Application Software - Word Processors, Spreadsheets, Database Software",
-                "Programming Software - Compilers, Interpreters, Debuggers",
-                "Programming Languages Classification - Low Level, High Level, Machine Language",
-                "Programming Paradigms - Procedural, Object-Oriented, Functional",
-                "Software Development Life Cycle (SDLC)",
-                "Open Source vs Proprietary Software"
-              ]
-            },
-            {
-              title: "Data Communication and Networking",
-              topics: [
-                "Data Communication Components - Sender, Receiver, Medium, Protocol",
-                "Transmission Media - Guided (Twisted Pair, Coaxial, Fiber Optic), Unguided (Radio, Microwave, Satellite)",
-                "Network Topologies - Bus, Star, Ring, Mesh, Tree, Hybrid",
-                "Network Types - LAN, WAN, MAN, PAN",
-                "Network Protocols - TCP/IP, HTTP, FTP, SMTP",
-                "OSI Model and its 7 layers",
-                "Network Security basics - Firewalls, Encryption"
-              ]
-            },
-            {
-              title: "Internet and World Wide Web",
-              topics: [
-                "Internet History and Architecture",
-                "Internet Service Providers (ISPs) and Internet Backbone",
-                "Domain Name System (DNS) and IP Addressing",
-                "Web Browsers - Chrome, Firefox, Safari, Edge functionality",
-                "Search Engines - Google, Bing, Yahoo search algorithms",
-                "Email Systems - SMTP, POP3, IMAP protocols",
-                "Web Technologies - HTML, CSS, JavaScript basics",
-                "E-commerce and Online Services",
-                "Internet Security and Privacy concerns"
-              ]
-            }
-          ]
-        },
-        {
-          code: "ACP124N",
-          type: "Applied Computing Minor",
-          title: "Digital Electronics",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Number systems, Boolean algebra, logic gates, combinational circuits",
-          units: [
-            {
-              title: "Number Systems and Binary Arithmetic",
-              topics: [
-                "Decimal, Binary, Octal, and Hexadecimal number systems",
-                "Base conversion methods between different number systems",
-                "Binary Addition, Subtraction using 1's and 2's complement",
-                "Binary Multiplication and Division techniques",
-                "Signed and Unsigned binary representation",
-                "BCD (Binary Coded Decimal) representation",
-                "Gray Code and its applications",
-                "Error detection codes - Parity bits, Hamming codes"
-              ]
-            },
-            {
-              title: "Boolean Algebra and Logic Gates",
-              topics: [
-                "Boolean algebra fundamentals and postulates",
-                "De Morgan's theorems and their applications",
-                "Boolean expression simplification using algebraic methods",
-                "Karnaugh Map (K-Map) simplification for 2, 3, and 4 variables",
-                "Basic Logic Gates - AND, OR, NOT, NAND, NOR, XOR, XNOR",
-                "Gate-level circuit design and implementation",
-                "Universal gates and their significance",
-                "Logic gate specifications - Propagation delay, Fan-in, Fan-out"
-              ]
-            },
-            {
-              title: "Combinational Logic Circuits",
-              topics: [
-                "Combinational vs Sequential circuits characteristics",
-                "Half Adder and Full Adder design and implementation",
-                "Binary adder circuits - Ripple Carry Adder, Look-ahead Carry Adder",
-                "Subtractor circuits and BCD adders",
-                "Encoders, Decoders, and Code converters",
-                "Multiplexers (MUX) and Demultiplexers (DEMUX)",
-                "Comparators and their applications",
-                "Implementation of Boolean functions using MUX and DEMUX"
-              ]
-            },
-            {
-              title: "Computer Architecture and Microprocessors",
-              topics: [
-                "Von Neumann Architecture components and working",
-                "Harvard Architecture vs Von Neumann Architecture",
-                "CPU organization - ALU, Control Unit, Registers",
-                "Instruction set architecture and instruction formats",
-                "Microprocessor fundamentals - 8085, 8086 architecture",
-                "Memory organization and addressing modes",
-                "Input/Output interfaces and interrupt handling",
-                "Introduction to RISC and CISC processors"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      semester: 2,
-      courses: [
-        {
-          code: "CAP222J",
-          type: "CT-1",
-          title: "Programming Fundamentals through C",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "Introduction to programming concepts, C language fundamentals",
-          units: [
-            {
-              title: "Programming Concepts and Problem Solving",
-              topics: [
-                "Algorithm definition and characteristics",
-                "Flowchart symbols and flowchart construction",
-                "Pseudocode writing techniques",
-                "Problem analysis and solution design",
-                "Programming languages evolution and classification",
-                "Compiler vs Interpreter working mechanisms",
-                "Program development life cycle",
-                "Structured programming principles"
-              ]
-            },
-            {
-              title: "C Programming Basics and Operators",
-              topics: [
-                "History and features of C programming language",
-                "C program structure - Preprocessor, main function, statements",
-                "Character set, keywords, identifiers, and constants",
-                "Data types - int, float, double, char and their modifiers",
-                "Variable declaration, initialization, and scope",
-                "Arithmetic, Relational, Logical, Assignment, and Bitwise operators",
-                "Operator precedence and associativity",
-                "Type conversion and type casting"
-              ]
-            },
-            {
-              title: "Control Structures and Loops",
-              topics: [
-                "Sequential, Selection, and Iterative control structures",
-                "Conditional statements - if, if-else, nested if-else, switch-case",
-                "Loop structures - for, while, do-while loops",
-                "Loop control statements - break, continue, goto",
-                "Nested loops and their applications",
-                "Loop optimization techniques",
-                "Common loop patterns and algorithms",
-                "Debugging control flow issues"
-              ]
-            },
-            {
-              title: "Functions, Arrays, and Advanced Concepts",
-              topics: [
-                "Function definition, declaration, and calling",
-                "Function parameters - call by value, call by reference",
-                "Recursive functions and recursion tree analysis",
-                "Storage classes - auto, static, extern, register",
-                "Arrays - declaration, initialization, and manipulation",
-                "Multi-dimensional arrays and matrix operations",
-                "String handling - string.h library functions",
-                "Pointers - declaration, initialization, arithmetic operations",
-                "Dynamic memory allocation - malloc(), calloc(), free()",
-                "Structures and unions - definition and usage",
-                "File handling operations in C"
-              ]
-            }
-          ]
-        },
-        {
-          code: "ACP222N",
-          type: "Applied Computing Minor",
-          title: "Web Designing",
-          theory_credits: 4,
-          practical_credits: 2,
-          description: "HTML5, CSS3, JavaScript fundamentals for web development",
-          units: [
-            {
-              title: "HTML5 Fundamentals and Semantic Markup",
-              topics: [
-                "HTML5 document structure and DOCTYPE declaration",
-                "Semantic HTML5 elements - header, nav, main, section, article, aside, footer",
-                "HTML forms - input types, validation, form controls",
-                "HTML5 multimedia elements - audio, video, canvas",
-                "HTML5 APIs - Geolocation, Local Storage, Web Workers",
-                "Accessibility in HTML - ARIA attributes, semantic markup",
-                "HTML5 metadata and SEO optimization",
-                "Progressive Web App basics with HTML5"
-              ]
-            },
-            {
-              title: "CSS3 Styling and Responsive Design",
-              topics: [
-                "CSS3 syntax, selectors, and specificity rules",
-                "CSS Box Model - margin, border, padding, content",
-                "CSS3 layout techniques - Flexbox, CSS Grid, Floats",
-                "Responsive web design principles and mobile-first approach",
-                "CSS3 media queries and breakpoints",
-                "Bootstrap framework - grid system, components, utilities",
-                "CSS3 animations and transitions",
-                "CSS preprocessors introduction - SASS/LESS basics"
-              ]
-            },
-            {
-              title: "JavaScript Programming Fundamentals",
-              topics: [
-                "JavaScript syntax, variables, and data types",
-                "JavaScript functions - declaration, expression, arrow functions",
-                "Control structures in JavaScript - if-else, loops, switch",
-                "JavaScript arrays and array methods",
-                "JavaScript objects and object-oriented programming",
-                "Error handling with try-catch blocks",
-                "JavaScript scope and closures",
-                "ES6 features - let/const, template literals, destructuring"
-              ]
-            },
-            {
-              title: "DOM Manipulation and Interactive Web Development",
-              topics: [
-                "Document Object Model (DOM) structure and navigation",
-                "DOM element selection and manipulation methods",
-                "Event handling - addEventListener, event delegation",
-                "Form validation and user input handling",
-                "AJAX and Fetch API for asynchronous operations",
-                "JSON data format and parsing",
-                "Local Storage and Session Storage usage",
-                "Basic JavaScript debugging techniques",
-                "Introduction to modern JavaScript frameworks"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-};
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all functionality
+    initNavigation();
+    initStatCounters();
+    initSearchFunctionality();
+    initContactForm();
+    initScrollAnimations();
+    initBootstrapComponents();
+    
+    // Fix navigation issues
+    fixNavigationLinks();
+});
 
-// Application state
-let currentPage = 'home';
-let currentSemester = null;
-let currentCourse = null;
-
-// DOM Elements
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
-const mainContent = document.getElementById('mainContent');
-const backToTop = document.getElementById('backToTop');
-
-// Initialize application
-document.addEventListener('DOMContentLoaded', function () {
-    // Navigation toggle for mobile
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
-    });
-    navToggle.addEventListener('touchstart', function (e) {
-        e.preventDefault();
-        navMenu.classList.toggle('active');
+// Fix navigation links that weren't working
+function fixNavigationLinks() {
+    // Fix all anchor links to scroll properly
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            const targetId = href.substring(1);
+            const target = document.getElementById(targetId);
+            
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Close mobile menu if open
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            }
+        });
     });
 
-    // Dropdown menu for semesters
-    const navDropdown = document.querySelector('.nav-dropdown > .nav-link');
-    const dropdownMenu = document.querySelector('.nav-dropdown .dropdown-menu');
-    navDropdown.addEventListener('click', function (e) {
-        e.preventDefault();
-        dropdownMenu.classList.toggle('show');
-    });
-    navDropdown.addEventListener('touchstart', function (e) {
-        e.preventDefault();
-        dropdownMenu.classList.toggle('show');
-    });
-
-    // Page navigation
-    document.querySelectorAll('[data-page]').forEach(function (el) {
-        el.addEventListener('click', function (e) {
+    // Ensure semester cards work
+    document.querySelectorAll('.semester-card').forEach(card => {
+        card.addEventListener('click', function(e) {
             e.preventDefault();
-            showPage(el.dataset.page, el.dataset.semester);
-        });
-        el.addEventListener('touchstart', function (e) {
-            e.preventDefault();
-            showPage(el.dataset.page, el.dataset.semester);
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
         });
     });
 
-    // Back to top button
-    const backToTop = document.getElementById('backToTop');
-    backToTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    backToTop.addEventListener('touchstart', function (e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Show correct page
-    function showPage(page, semester) {
-        document.querySelectorAll('.page').forEach(function (section) {
-            section.classList.remove('active');
+    // Fix semester navigation buttons
+    document.querySelectorAll('.semester-navigation a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
         });
-        if (page === 'semester' && semester) {
-            document.getElementById('semesterPage').classList.add('active');
-            // Load semester content dynamically here
-        } else if (page === 'program') {
-            document.getElementById('programPage').classList.add('active');
-        } else if (page === 'industry') {
-            document.getElementById('industryPage').classList.add('active');
+    });
+}
+
+// Navigation functionality
+function initNavigation() {
+    // Update active nav item on scroll
+    window.addEventListener('scroll', updateActiveNavItem);
+    
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.backgroundColor = 'rgba(255, 255, 253, 0.95)';
+            navbar.style.backdropFilter = 'blur(10px)';
         } else {
-            document.getElementById('homePage').classList.add('active');
+            navbar.style.backgroundColor = 'var(--color-surface)';
+            navbar.style.backdropFilter = 'none';
+        }
+    });
+}
+
+function updateActiveNavItem() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Animated statistics counters
+function initStatCounters() {
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    
+    const animateCounter = (element) => {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const start = performance.now();
+        
+        const animate = (currentTime) => {
+            const elapsed = currentTime - start;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = Math.floor(target * easeOutQuart);
+            
+            element.textContent = current;
+            element.classList.add('counting');
+            
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                element.textContent = target;
+            }
+        };
+        
+        requestAnimationFrame(animate);
+    };
+
+    // Intersection Observer for triggering animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+                animateCounter(entry.target);
+                entry.target.setAttribute('data-animated', 'true');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(stat => {
+        observer.observe(stat);
+    });
+}
+
+// Search functionality - Fixed version
+function initSearchFunctionality() {
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    
+    if (!searchInput || !searchBtn) return;
+
+    // Search courses and content
+    const performSearch = () => {
+        const query = searchInput.value.toLowerCase().trim();
+        if (query.length < 2) {
+            clearSearchHighlights();
+            showSearchMessage('Please enter at least 2 characters to search.');
+            return;
+        }
+
+        clearSearchHighlights();
+        const matchCount = highlightSearchResults(query);
+        
+        if (matchCount > 0) {
+            // Find first match and scroll to it
+            const firstMatch = document.querySelector('.search-highlight');
+            if (firstMatch) {
+                const section = firstMatch.closest('section');
+                if (section) {
+                    // Expand collapsed content if needed
+                    const collapseParent = firstMatch.closest('.collapse');
+                    if (collapseParent && !collapseParent.classList.contains('show')) {
+                        const toggle = document.querySelector(`[data-bs-target="#${collapseParent.id}"]`);
+                        if (toggle) {
+                            toggle.click();
+                        }
+                    }
+                    
+                    // Expand accordion if needed
+                    const accordionParent = firstMatch.closest('.accordion-collapse');
+                    if (accordionParent && !accordionParent.classList.contains('show')) {
+                        const toggle = document.querySelector(`[data-bs-target="#${accordionParent.id}"]`);
+                        if (toggle) {
+                            toggle.click();
+                        }
+                    }
+
+                    // Wait a moment for animations, then scroll
+                    setTimeout(() => {
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 300);
+                }
+            }
+            showSearchMessage(`Found ${matchCount} matches for: "${query}"`);
+        } else {
+            showSearchMessage('No results found for: "' + query + '"');
+        }
+    };
+
+    const highlightSearchResults = (query) => {
+        const searchableElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li, .course-title h5, .semester-title');
+        let matchCount = 0;
+
+        searchableElements.forEach(element => {
+            const text = element.textContent;
+            if (text.toLowerCase().includes(query)) {
+                const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+                element.innerHTML = text.replace(regex, '<span class="search-highlight">$1</span>');
+                matchCount++;
+            }
+        });
+
+        return matchCount;
+    };
+
+    const clearSearchHighlights = () => {
+        const highlights = document.querySelectorAll('.search-highlight');
+        highlights.forEach(highlight => {
+            const parent = highlight.parentNode;
+            parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+            parent.normalize();
+        });
+        hideSearchMessage();
+    };
+
+    const showSearchMessage = (message) => {
+        let messageEl = document.getElementById('searchMessage');
+        if (!messageEl) {
+            messageEl = document.createElement('div');
+            messageEl.id = 'searchMessage';
+            messageEl.className = 'alert alert-info position-fixed';
+            messageEl.style.cssText = 'top: 80px; right: 20px; z-index: 1050; max-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
+            document.body.appendChild(messageEl);
+        }
+        messageEl.innerHTML = `
+            <div class="d-flex justify-content-between align-items-center">
+                <span>${message}</span>
+                <button type="button" class="btn-close btn-close-white" onclick="this.parentElement.parentElement.style.display='none'"></button>
+            </div>
+        `;
+        messageEl.style.display = 'block';
+        
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+            hideSearchMessage();
+        }, 5000);
+    };
+
+    const hideSearchMessage = () => {
+        const messageEl = document.getElementById('searchMessage');
+        if (messageEl) {
+            messageEl.style.display = 'none';
+        }
+    };
+
+    const escapeRegex = (string) => {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    // Event listeners
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            performSearch();
+        }
+    });
+    
+    // Clear highlights when input is cleared
+    searchInput.addEventListener('input', (e) => {
+        if (e.target.value.length === 0) {
+            clearSearchHighlights();
+        }
+    });
+}
+
+// Contact form functionality
+function initContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            subject: document.getElementById('subject').value.trim(),
+            message: document.getElementById('message').value.trim()
+        };
+
+        // Basic validation
+        if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            showFormMessage('Please fill in all fields.', 'error');
+            return;
+        }
+
+        if (!isValidEmail(formData.email)) {
+            showFormMessage('Please enter a valid email address.', 'error');
+            return;
+        }
+
+        if (formData.message.length < 10) {
+            showFormMessage('Message must be at least 10 characters long.', 'error');
+            return;
+        }
+
+        // Simulate form submission
+        simulateFormSubmission(formData);
+    });
+
+    const isValidEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const simulateFormSubmission = (data) => {
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        
+        // Show loading state
+        submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate API call
+        setTimeout(() => {
+            showFormMessage('Thank you for your message! We will get back to you within 24 hours.', 'success');
+            contactForm.reset();
+            
+            // Reset button
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }, 1500);
+    };
+
+    const showFormMessage = (message, type) => {
+        // Remove existing message
+        const existingMessage = document.querySelector('.form-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+
+        // Create new message
+        const messageEl = document.createElement('div');
+        messageEl.className = `alert alert-${type === 'error' ? 'danger' : 'success'} form-message`;
+        messageEl.innerHTML = `<i class="bi bi-${type === 'error' ? 'exclamation-triangle' : 'check-circle'}"></i> ${message}`;
+        
+        // Insert before form
+        contactForm.parentNode.insertBefore(messageEl, contactForm);
+        
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            if (messageEl.parentNode) {
+                messageEl.remove();
+            }
+        }, 5000);
+        
+        // Scroll to message
+        messageEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+}
+
+// Scroll animations
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Animate course cards on scroll
+    const animatedElements = document.querySelectorAll('.course-card, .feature-card, .career-card, .semester-card');
+    animatedElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+}
+
+// Bootstrap components initialization
+function initBootstrapComponents() {
+    // Initialize tooltips
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Initialize popovers
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+
+    // Course details collapse handlers
+    const courseDetailButtons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+    courseDetailButtons.forEach(button => {
+        const targetId = button.getAttribute('data-bs-target');
+        const target = document.querySelector(targetId);
+        if (target) {
+            target.addEventListener('show.bs.collapse', function () {
+                const icon = button.querySelector('i');
+                if (icon && icon.classList.contains('bi-chevron-down')) {
+                    icon.classList.remove('bi-chevron-down');
+                    icon.classList.add('bi-chevron-up');
+                }
+                button.innerHTML = button.innerHTML.replace('View Details', 'Hide Details');
+            });
+
+            target.addEventListener('hide.bs.collapse', function () {
+                const icon = button.querySelector('i');
+                if (icon && icon.classList.contains('bi-chevron-up')) {
+                    icon.classList.remove('bi-chevron-up');
+                    icon.classList.add('bi-chevron-down');
+                }
+                button.innerHTML = button.innerHTML.replace('Hide Details', 'View Details');
+            });
+        }
+    });
+}
+
+// Utility functions
+function downloadSyllabus(semester) {
+    showNotification(`Preparing Semester ${semester} syllabus for download...`, 'info');
+    
+    // Simulate download preparation
+    setTimeout(() => {
+        showNotification('Download functionality will be available soon. Please contact the department for syllabus copies.', 'warning');
+    }, 1000);
+}
+
+function shareSemester(semester) {
+    // Web Share API if available
+    if (navigator.share) {
+        navigator.share({
+            title: `Semester ${semester} - Computer Applications - GDC Beerwah`,
+            text: `Check out the Computer Applications Semester ${semester} syllabus at Government Degree College Beerwah`,
+            url: window.location.href + '#semester' + semester
+        });
+    } else {
+        // Fallback - copy to clipboard
+        const url = window.location.href + '#semester' + semester;
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(() => {
+                showNotification('Semester link copied to clipboard!', 'success');
+            });
+        } else {
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = url;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            showNotification('Semester link copied to clipboard!', 'success');
+        }
+    }
+}
+
+function printSemester(semester) {
+    // Create a new window with just the semester content for printing
+    const semesterSection = document.querySelector(`#semester${semester}`);
+    if (semesterSection) {
+        const printWindow = window.open('', '_blank');
+        const content = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Semester ${semester} - Computer Applications - GDC Beerwah</title>
+                <meta charset="UTF-8">
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+                    h1, h2, h3, h4, h5, h6 { color: #333; margin-bottom: 10px; }
+                    .course-card { border: 2px solid #ddd; margin: 20px 0; padding: 15px; page-break-inside: avoid; }
+                    .card-header { background: #f5f5f5; padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+                    .badge { background: #007bff; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; }
+                    .collapse { display: block !important; height: auto !important; }
+                    .btn { display: none !important; }
+                    ul { margin: 10px 0; padding-left: 20px; }
+                    .accordion-item { border: 1px solid #ddd; margin: 5px 0; }
+                    .accordion-header { background: #f8f9fa; padding: 10px; font-weight: bold; }
+                    .accordion-body { padding: 10px; }
+                    @media print { 
+                        body { margin: 15px; } 
+                        .course-card { page-break-inside: avoid; }
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Government Degree College Beerwah</h1>
+                <h2>Department of Computer Applications</h2>
+                <h3>Bachelor of Computer Applications (BCA) Program</h3>
+                <hr>
+                ${semesterSection.innerHTML}
+                <hr>
+                <p><small>Generated on: ${new Date().toLocaleDateString()}</small></p>
+            </body>
+            </html>
+        `;
+        printWindow.document.write(content);
+        printWindow.document.close();
+        
+        // Wait for content to load, then print
+        printWindow.onload = function() {
+            printWindow.print();
+        };
+        
+        showNotification(`Semester ${semester} opened in new window for printing`, 'success');
+    } else {
+        showNotification('Semester content not found', 'error');
+    }
+}
+
+function showNotification(message, type = 'info') {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `alert alert-${type} position-fixed`;
+    notification.style.cssText = 'top: 20px; right: 20px; z-index: 1060; min-width: 300px; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
+    notification.innerHTML = `
+        <div class="d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-${type === 'error' ? 'exclamation-triangle' : type === 'success' ? 'check-circle' : type === 'warning' ? 'exclamation-triangle' : 'info-circle'}"></i> ${message}</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+    `;
+
+    // Add to page
+    document.body.appendChild(notification);
+
+    // Auto-remove after 4 seconds
+    const timer = setTimeout(() => {
+        if (notification.parentNode) {
+            notification.style.opacity = '0';
+            setTimeout(() => notification.remove(), 300);
+        }
+    }, 4000);
+
+    // Manual close
+    notification.querySelector('.btn-close').addEventListener('click', () => {
+        clearTimeout(timer);
+        notification.style.opacity = '0';
+        setTimeout(() => notification.remove(), 300);
+    });
+}
+
+// Keyboard navigation enhancements
+document.addEventListener('keydown', function(e) {
+    // ESC to close search highlights
+    if (e.key === 'Escape') {
+        const highlights = document.querySelectorAll('.search-highlight');
+        if (highlights.length > 0) {
+            clearSearchHighlights();
+        }
+    }
+    
+    // Ctrl/Cmd + K to focus search
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.focus();
+            searchInput.select();
         }
     }
 });
 
-// Navigation Functions
-function initializeNavigation() {
-  // Mobile navigation toggle
-  if (navToggle) {
-    navToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      navMenu.classList.toggle('active');
-    });
-  }
-
-  // Back button functionality
-  const backButton = document.getElementById('backToCourses');
-  if (backButton) {
-    backButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (currentSemester) {
-        showSemesterPage(currentSemester);
-      } else {
-        showPage('home');
-      }
-    });
-  }
-}
-
-function initializeEventListeners() {
-  // Global click handler for all navigation
-  document.addEventListener('click', function(e) {
-    handleGlobalClick(e);
-  });
-
-  // Smooth scrolling for anchor links
-  document.addEventListener('click', function(e) {
-    if (e.target.matches('a[href^="#"]')) {
-      e.preventDefault();
-      const target = document.querySelector(e.target.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  });
-}
-
-function handleGlobalClick(e) {
-  e.preventDefault();
-
-  // Handle accordion toggle
-  if (e.target.closest('.accordion-header')) {
-    const header = e.target.closest('.accordion-header');
-    toggleAccordion(header);
-    return;
-  }
-
-  // Handle navigation links with data-page attribute
-  const navElement = e.target.closest('[data-page]');
-  if (navElement) {
-    const page = navElement.dataset.page;
-    const semester = navElement.dataset.semester;
-    
-    if (page === 'semester' && semester) {
-      showSemesterPage(parseInt(semester));
-    } else {
-      showPage(page);
-    }
-    
-    // Close mobile menu
-    if (navMenu) {
-      navMenu.classList.remove('active');
-    }
-    
-    updateActiveNavLink(navElement);
-    return;
-  }
-
-  // Handle semester cards
-  const semesterCard = e.target.closest('.semester-card');
-  if (semesterCard) {
-    const semester = semesterCard.dataset.semester;
-    if (semester) {
-      showSemesterPage(parseInt(semester));
-      return;
-    }
-  }
-
-  // Handle course cards
-  const courseCard = e.target.closest('.course-card');
-  if (courseCard) {
-    const courseCode = courseCard.dataset.course;
-    if (courseCode) {
-      showCourseDetail(courseCode);
-      return;
-    }
-  }
-
-  // Handle buttons with data-page
-  const button = e.target.closest('.btn[data-page]');
-  if (button) {
-    const page = button.dataset.page;
-    const semester = button.dataset.semester;
-    
-    if (page === 'semester' && semester) {
-      showSemesterPage(parseInt(semester));
-    } else {
-      showPage(page);
-    }
-    return;
-  }
-}
-
-function toggleAccordion(header) {
-  const accordionItem = header.closest('.accordion-item');
-  const content = accordionItem.querySelector('.accordion-content');
-  const icon = header.querySelector('.accordion-icon');
-  
-  // Toggle active state
-  const isActive = accordionItem.classList.toggle('active');
-  
-  // Update icon rotation and content height
-  if (isActive) {
-    if (icon) icon.style.transform = 'rotate(180deg)';
-    if (content) content.style.maxHeight = content.scrollHeight + 'px';
-  } else {
-    if (icon) icon.style.transform = 'rotate(0deg)';
-    if (content) content.style.maxHeight = '0';
-  }
-}
-
-function initializeBackToTop() {
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
-    }
-  });
-
-  if (backToTop) {
-    backToTop.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-}
-
-function updateActiveNavLink(clickedLink) {
-  // Remove active class from all nav links
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.classList.remove('active');
-  });
-  
-  // Add active class to appropriate nav link
-  if (clickedLink && clickedLink.classList.contains('nav-link')) {
-    clickedLink.classList.add('active');
-  } else {
-    // Find and activate the appropriate main nav link based on current page
-    const currentPageLink = document.querySelector(`.nav-link[data-page="${currentPage}"]`);
-    if (currentPageLink) {
-      currentPageLink.classList.add('active');
-    }
-  }
-}
-
-// Page Management
-function showPage(pageName) {
-  // Hide all pages
-  document.querySelectorAll('.page').forEach(page => {
-    page.classList.remove('active');
-  });
-  
-  // Show requested page
-  const targetPage = document.getElementById(pageName + 'Page');
-  if (targetPage) {
-    targetPage.classList.add('active');
-    currentPage = pageName;
-    
-    // Update active nav link
-    updateActiveNavLink();
-  }
-  
-  // Scroll to top
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function showSemesterPage(semesterNumber) {
-  currentSemester = semesterNumber;
-  
-  // Update breadcrumb and title
-  const semesterBreadcrumb = document.getElementById('semesterBreadcrumb');
-  const semesterTitle = document.getElementById('semesterTitle');
-  
-  if (semesterBreadcrumb) {
-    semesterBreadcrumb.textContent = `Semester ${semesterNumber}`;
-  }
-  if (semesterTitle) {
-    semesterTitle.textContent = `Semester ${semesterNumber} Courses`;
-  }
-  
-  // Generate semester content
-  const semesterData = programData.semesters.find(s => s.semester === semesterNumber);
-  const semesterContent = document.getElementById('semesterContent');
-  
-  if (semesterData && semesterContent) {
-    semesterContent.innerHTML = generateSemesterCoursesHTML(semesterData);
-  } else if (semesterContent) {
-    semesterContent.innerHTML = '<p>No courses found for this semester.</p>';
-  }
-  
-  // Show semester page
-  showPage('semester');
-}
-
-function showCourseDetail(courseCode) {
-  // Find course across all semesters
-  let course = null;
-  let semester = null;
-  
-  for (const semesterData of programData.semesters) {
-    const foundCourse = semesterData.courses.find(c => c.code === courseCode);
-    if (foundCourse) {
-      course = foundCourse;
-      semester = semesterData.semester;
-      break;
-    }
-  }
-  
-  if (course) {
-    currentCourse = courseCode;
-    
-    // Update breadcrumb
-    const courseBreadcrumb = document.getElementById('courseBreadcrumb');
-    if (courseBreadcrumb) {
-      courseBreadcrumb.textContent = `Semester ${semester} / ${course.title}`;
-    }
-    
-    // Generate course detail content
-    const courseDetailContent = document.getElementById('courseDetailContent');
-    if (courseDetailContent) {
-      courseDetailContent.innerHTML = generateCourseDetailHTML(course, semester);
-    }
-    
-    // Show course detail page
-    showPage('courseDetail');
-  }
-}
-
-// HTML Generation Functions
-function generateSemesterCoursesHTML(semesterData) {
-  let html = `
-    <div class="semester-info">
-      <p>This semester includes ${semesterData.courses.length} courses covering various aspects of computer applications.</p>
-    </div>
-    <div class="courses-grid">
-  `;
-  
-  semesterData.courses.forEach(course => {
-    html += `
-      <div class="course-card" data-course="${course.code}">
-        <div class="course-header">
-          <div class="course-code">${course.code}</div>
-          <div class="course-type">${course.type}</div>
-        </div>
-        <h3 class="course-title">${course.title}</h3>
-        <div class="course-credits">
-          <div class="credit-item">
-            <i class="fas fa-book"></i>
-            <span>Theory: ${course.theory_credits} credits</span>
-          </div>
-          <div class="credit-item">
-            <i class="fas fa-laptop-code"></i>
-            <span>Practical: ${course.practical_credits} credits</span>
-          </div>
-        </div>
-        <p class="course-description">${course.description}</p>
-        <div class="course-actions">
-          <i class="fas fa-arrow-right"></i>
-        </div>
-      </div>
-    `;
-  });
-  
-  html += '</div>';
-  return html;
-}
-
-function generateCourseDetailHTML(course, semester) {
-  let html = `
-    <div class="course-detail">
-      <div class="course-detail-header">
-        <div class="course-detail-title">
-          <div class="course-code">${course.code}</div>
-          <h1>${course.title}</h1>
-        </div>
-        <div class="course-detail-meta">
-          <div class="meta-item">
-            <i class="fas fa-calendar"></i>
-            <span>Semester ${semester}</span>
-          </div>
-          <div class="meta-item">
-            <i class="fas fa-tag"></i>
-            <span>${course.type}</span>
-          </div>
-          <div class="meta-item">
-            <i class="fas fa-book"></i>
-            <span>Theory: ${course.theory_credits} credits</span>
-          </div>
-          <div class="meta-item">
-            <i class="fas fa-laptop-code"></i>
-            <span>Practical: ${course.practical_credits} credits</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="course-description">
-        <h3>Course Description</h3>
-        <p>${course.description}</p>
-      </div>
-  `;
-  
-  if (course.units && course.units.length > 0) {
-    html += `
-      <div class="course-units">
-        <h3>Course Syllabus</h3>
-        <div class="accordion">
-    `;
-    
-    course.units.forEach((unit, index) => {
-      html += `
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <div class="accordion-title">
-              <span class="unit-number">Unit ${index + 1}</span>
-              <h4>${unit.title}</h4>
-            </div>
-            <div class="accordion-icon">
-              <i class="fas fa-chevron-down"></i>
-            </div>
-          </div>
-          <div class="accordion-content">
-            <div class="unit-topics">
-              <ul>
-      `;
-      
-      unit.topics.forEach(topic => {
-        html += `<li>${topic}</li>`;
-      });
-      
-      html += `
-              </ul>
-            </div>
-          </div>
-        </div>
-      `;
+// Clear search highlights function (for external use)
+function clearSearchHighlights() {
+    const highlights = document.querySelectorAll('.search-highlight');
+    highlights.forEach(highlight => {
+        const parent = highlight.parentNode;
+        parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+        parent.normalize();
     });
     
-    html += '</div></div>';
-  }
-  
-  html += `
-      <div class="course-outcomes">
-        <h3>Learning Outcomes</h3>
-        <p>Upon successful completion of this course, students will be able to understand and apply the key concepts and techniques covered in the curriculum.</p>
-      </div>
-    </div>
-  `;
-  
-  return html;
+    const messageEl = document.getElementById('searchMessage');
+    if (messageEl) {
+        messageEl.style.display = 'none';
+    }
 }
 
-// Utility Functions
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
-
-// Search functionality
-function searchCourses(query) {
-  const results = [];
-  
-  programData.semesters.forEach(semester => {
-    semester.courses.forEach(course => {
-      if (course.title.toLowerCase().includes(query) || 
-          course.code.toLowerCase().includes(query) ||
-          course.description.toLowerCase().includes(query)) {
-        results.push({
-          ...course,
-          semester: semester.semester
-        });
-      }
-    });
-  });
-  
-  return results;
-}
-
-// Keyboard navigation support
-document.addEventListener('keydown', function(e) {
-  // ESC key to close mobile menu
-  if (e.key === 'Escape' && navMenu) {
-    navMenu.classList.remove('active');
-  }
-  
-  // Enter key on focusable elements
-  if (e.key === 'Enter' && e.target.matches('[data-page], .course-card, .semester-card, .accordion-header')) {
-    e.target.click();
-  }
-});
-
-// Add accessibility improvements
-function addAccessibilityFeatures() {
-  // Add ARIA labels to interactive elements
-  document.querySelectorAll('.course-card, .semester-card').forEach(card => {
-    card.setAttribute('role', 'button');
-    card.setAttribute('tabindex', '0');
-    card.setAttribute('aria-label', card.querySelector('h3') ? `View details for ${card.querySelector('h3').textContent}` : 'View details');
-  });
-  
-  // Add ARIA labels to accordion headers
-  document.querySelectorAll('.accordion-header').forEach(header => {
-    header.setAttribute('role', 'button');
-    header.setAttribute('tabindex', '0');
-    header.setAttribute('aria-expanded', 'false');
-  });
-}
-
-// Initialize accessibility features after content loads
-function initializeAccessibility() {
-  setTimeout(addAccessibilityFeatures, 100);
-}
-
-// Re-run accessibility setup when content changes
-document.addEventListener('DOMContentLoaded', initializeAccessibility);
-
-// Export functions for potential testing
-window.CAWebsite = {
-  showPage,
-  showSemesterPage,
-  showCourseDetail,
-  searchCourses,
-  programData
-};
+// Export functions for global access
+window.downloadSyllabus = downloadSyllabus;
+window.shareSemester = shareSemester;
+window.printSemester = printSemester;
+window.clearSearchHighlights = clearSearchHighlights;
